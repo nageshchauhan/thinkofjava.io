@@ -1,0 +1,37 @@
+Why String is immutable in Java
+
+There are multiple reasons that String is designed to be immutable in Java. A good answer depends on good understanding of memory, synchronization, data structures etc.
+
+Following are some of the reason for String to be immutable:
+
+1) Requirement of String pool
+    String pool(String intern pool) is a special storage area in heap. When a string is created and if the String already exists in the pool, the reference of the existing string will be returned, instead of creating a new Object and returning its reference.
+
+    The following code will create only one String object in the heap
+
+<code>
+String s1 = "abcd";
+String s2 = "abcd";
+</code>
+
+<!--  Here need to add a diagram-->
+
+If String is not immutable, changing the String with one reference will lead to the wrong value for the other reference.
+
+2) Allow String to cache its Hashcode
+    The hashcode of String is frequently used in Java, For example, in a Hashmap. Being immutable gurantees that hashcode will always the same, so that it can be cached without worrying the change. That means, there is no need to calculate hashcode everytime it is used.
+
+3)Security
+    String is widely used as parameter for many Java classed, e.g. Network connection, opening files, etc. Were String not immutable, a connection or file would be changed and lead to serious security threat.
+    The method thought, it was connecting to one machine, but was not. Mutable Strings could cause security problem in Reflection too, as the parameters are Strings.
+    Here is a code example:
+<code>
+    boolean connect(String s){
+        if(!isSecure()){
+            throw new SecurityException();
+        }
+    
+        //here will cause problem, if s is changed before this by using other references.
+        causeProblem();
+    }
+</code>
