@@ -1,6 +1,6 @@
 [Back to Threading](../README.md)
 # Creating Thread by extending Thread class
-```
+```java
 class MyThread extends Thread{
   public void run{
     System.out.println("Inside run method");
@@ -61,7 +61,7 @@ class Thread{
 
 ### If we are not overriding run() method
 If we are not overriding run() method, then Thread class run() method will be executed. run() method of Thread class has empty implementation, hence we won't get any output.
-```
+```java
 class MyThread extends Thread{
   public static void main(String []args){
     MyThread t = new MyThread();
@@ -77,7 +77,7 @@ Ouput will be:
 
 ### Overloading of run() method
 Overloading of run() is possible, but Thread class start() method will always call no argument run() only. The other run method needs to be called explicitly.
-```
+```java
 class MyThread extends Thread{
   public void run(){
     System.out.println("no-args run method");
@@ -99,7 +99,7 @@ no-args run method
 
 ### Overriding of start() method
 If we override start(), the start() method will be executed just like a normal method call and no new thread will be created.
-```
+```java
 class MyThread extends Thread{
   public void start(){
     System.out.println("start method called");
@@ -121,7 +121,7 @@ start method called
 **Note:** It is not recommended to override start() method, otherwise there is no point of multi threading.
 
 ### Using super keyword to call start method
-```
+```java
 class MyThread extends Thread{
   public void start(){
     super.start();
