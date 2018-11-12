@@ -1,6 +1,5 @@
 [Back to Threading](../README.md)
-#Thread Priority
-
+# Thread Priority
 
 Every thread in java has some priority and the range of Thread priorities is **1 to 10** (1 is least and 10 is highest). **By default, a thread inherits the priority of its parent thread**. 
 
@@ -28,16 +27,16 @@ Example:
 
 ```
 class MyThread extends Thread{
-	public void run(){
-		System.out.println("This line executed by "+Thread.currentThread().getName());
-	}
-	
-	public static void main(String []args){
-		MyThread t = new MyThread();
-		t.setPriority(10);
-		t.start();
-		System.out.println("Main thread executed");
-	}
+    public void run(){
+        System.out.println("This line executed by "+Thread.currentThread().getName());
+    }
+
+    public static void main(String []args){
+        MyThread t = new MyThread();
+        t.setPriority(10);
+        t.start();
+        System.out.println("Main thread executed");
+    }
 }
 
 ```
