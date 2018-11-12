@@ -10,13 +10,13 @@ We can get and set name of thread by using following methods of thread class
 
 Example:
 
-```
+```java
 class MyThread {
-	
-	public static void main(String []args){
-		System.out.println(Thread.currentThread().getName());
-		System.out.println("This line is executed by main Thread");
-	}
+
+    public static void main(String []args){
+        System.out.println(Thread.currentThread().getName());
+        System.out.println("This line is executed by main Thread");
+    }
 }
 ```
 
@@ -31,14 +31,14 @@ In the above example, only one thread is present and the name of that thread is 
 
 Lets change the name of main thread
 
-```
+```java
 class MyThread{
-	public static void main(String []args){
-		System.out.println(Thread.currentThread().getName());
-		Thread.currentThread().setName("MyThread");
-		System.out.println(Thread.currentThread().getName());
-		System.out.println(2/0);
-	}
+    public static void main(String []args){
+        System.out.println(Thread.currentThread().getName());
+        Thread.currentThread().setName("MyThread");
+        System.out.println(Thread.currentThread().getName());
+        System.out.println(2/0);
+    }
 }
 ```
 Output:
@@ -59,17 +59,17 @@ Example:
 
 ```java
 class MyThread extends Thread{
-	public void run(){
-		System.out.println("Child Thread name: "+Thread.currentThread().getName());
-	}
-	
-	public static void main(String []args){
-		MyThread t1 = new MyThread();
-		t1.start();
-		MyThread t2 = new MyThread();
-		t2.start();
-		System.out.println("This line executed by main thread");
-	}
+    public void run(){
+        System.out.println("Child Thread name: "+Thread.currentThread().getName());
+    }
+
+    public static void main(String []args){
+        MyThread t1 = new MyThread();
+        t1.start();
+        MyThread t2 = new MyThread();
+        t2.start();
+        System.out.println("This line executed by main thread");
+    }
 }
 ```
 Possible Ouptut:
