@@ -25,7 +25,7 @@ We can change the thread priority at any point of time.
 
 Example:
 
-```
+```java
 class MyThread extends Thread{
     public void run(){
         System.out.println("This line executed by "+Thread.currentThread().getName());
