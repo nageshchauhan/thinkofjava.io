@@ -2,7 +2,7 @@
 # The ways to define Thread
 A Thread can be defined in two ways<br>
 ## **1. By extending Thread class:**
-```
+```java
 class MyThread extends Thread{
   public void run{
     System.out.println("Inside run method");
