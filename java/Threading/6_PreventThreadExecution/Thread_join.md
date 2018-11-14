@@ -87,3 +87,6 @@ Output:
 main thread completes execution
 MyThread completes execution
 ```
+## Lifecyle of thread in Thread.join()
+
+![Threading Hierarchy](../../../assets/images/thread_join.png)
