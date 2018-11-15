@@ -13,4 +13,5 @@
 	- [yield()](6_PreventThreadExecution/Thread_yield.md)
 	- [join()](6_PreventThreadExecution/Thread_join.md)
 	- [sleep()](6_PreventThreadExecution/Thread_sleep.md)
-7. synchronization
+7. [Interruption of Thread](7_Interruption_of_thread/README.md)
+8. synchronization
