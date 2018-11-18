@@ -14,4 +14,7 @@
 	- [join()](6_PreventThreadExecution/Thread_join.md)
 	- [sleep()](6_PreventThreadExecution/Thread_sleep.md)
 7. [Interruption of Thread](7_Interruption_of_thread/README.md)
-8. synchronization
+8. [Synchronization](8_synchronization/README.md)
+9. [Class level vs Object level lock](9_class_level_vs_object_level_lock/README.md)
+10. Inter Thread communication
+11. Daemon vs Normal Thread
