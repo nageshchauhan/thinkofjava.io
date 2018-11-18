@@ -6,7 +6,7 @@
 2. [Ways to define thread](2_WaysToCreateThread/README.md)
 	- [by extending Thread class](2_WaysToCreateThread/ExtendingThreadClass.md)
 	- [by implementing Runnable Interface](2_WaysToCreateThread/ImplementingRunnableInterface.md)
-3. [Thread Lifecylce](3_ThreadLifeCycle/README.md)
+3. [Thread Lifecylce](3_ThreadLifecycle/README.md)
 4. [Getting and Setting Thread name](4_ThreadName/README.md)
 5. [Thread Priority](5_ThreadPriority/README.md)
 6. [Prevent Thread Execution](6_PreventThreadExecution/README.md)
