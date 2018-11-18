@@ -18,4 +18,4 @@
 9. [Class level vs Object level lock](9_class_level_vs_object_level_lock/README.md)
 10. [Inter Thread communication](10_Inter_thread_comm/README.md)
 11. [Deadlock](11_deadlock/README.md)
-12. Daemon vs User Thread
+12. [User vs Daemon Thread](12_user_vs_daemon_thread/README.md)
