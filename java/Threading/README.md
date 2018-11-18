@@ -16,5 +16,6 @@
 7. [Interruption of Thread](7_Interruption_of_thread/README.md)
 8. [Synchronization](8_synchronization/README.md)
 9. [Class level vs Object level lock](9_class_level_vs_object_level_lock/README.md)
-10. Inter Thread communication
-11. Daemon vs Normal Thread
+10. [Inter Thread communication](10_Inter_thread_comm/README.md)
+11. [Deadlock](11_deadlock/README.md)
+12. Daemon vs User Thread
