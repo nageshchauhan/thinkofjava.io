@@ -9,25 +9,25 @@ A thread can interrupt another sleeping or waiting thread. For doing this, Threa
 ### Example:
 ```java
 class MyThread extends Thread{
-    public void run() {
-        try{
-            for(int i=0;i<5;i++){
-                System.out.println("MyThread executing");
-                Thread.sleep(1000);
-            }
-        }catch(InterruptedException e){
-            System.out.println("MyThread got interrupted");
-        }
+  public void run() {
+    try{
+      for(int i=0;i<5;i++){
+          System.out.println("MyThread executing");
+          Thread.sleep(1000);
+      }
+    }catch(InterruptedException e){
+        System.out.println("MyThread got interrupted");
     }
+  }
 }
 public class InterruptionEx {
 
-    public static void main(String[] args){
-        MyThread t = new MyThread();
-        t.start();
-        t.interrupt();
-        System.out.println("End of main");
-    }
+  public static void main(String[] args){
+    MyThread t = new MyThread();
+    t.start();
+    t.interrupt();
+    System.out.println("End of main");
+  }
 }
 ```
 
