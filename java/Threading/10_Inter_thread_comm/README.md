@@ -24,29 +24,29 @@ class ThreadA extends Thread{
     @Override
     public void run() {
     	synchronized(this){
-    		System.out.println("Child thread start notification");
-    		for(int i =0;i<100;i++){
-    			total=total+i;
-    		}
-    		System.out.println("Child thread trying to give notification");
-    		this.notify();
+            System.out.println("Child thread start notification");
+            for(int i =0;i<100;i++){
+                total=total+i;
+            }
+            System.out.println("Child thread trying to give notification");
+            this.notify();
     	}
     }
 }
 
 public class ThreadB {
 
-	public static void main(String[] args) throws InterruptedException {
-		ThreadA a = new ThreadA();
-		a.start();
+    public static void main(String[] args) throws InterruptedException {
+        ThreadA a = new ThreadA();
+        a.start();
 
-		synchronized (a) {
-			System.out.println("main thread trying to call wait()");
-			a.wait();
-			System.out.println("Main thread got notification");
-			System.out.println(a.total);
-		}
-	}
+        synchronized (a) {
+            System.out.println("main thread trying to call wait()");
+            a.wait();
+            System.out.println("Main thread got notification");
+            System.out.println(a.total);
+        }
+    }
 }
 ```
 
