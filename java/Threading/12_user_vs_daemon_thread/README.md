@@ -27,30 +27,30 @@ Main thread is always non-daemon and its not possible to change it's daemon natu
 **Default nature:** By default main thread is non-daemon, but for all remaining threads, daemon nature is inherited from its parent. For example, if parent thread is daemon then child thread will also be daemon.
 
 Whenever the last non-daemon thread terminates, all the daemon are forced to terminate by JVM.</br>
-###Example
+### Example
 ```java
 class MyThread extends Thread{
-	@Override
-	public void run() {
-		for(int i=0;i<10;i++){
-			System.out.println("Lazy thread executing");
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-	}
+@Override
+    public void run() {
+        for(int i=0;i<10;i++){
+            System.out.println("Lazy thread executing");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
 
 public class Introduction{
 
-	public static void main(String[] args) {
-		MyThread t = new MyThread();
-		t.setDaemon(true);
-		t.start();
-		System.out.println("End of main thread");
-	}
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+        t.setDaemon(true);
+        t.start();
+        System.out.println("End of main thread");
+    }
 }
 ```
 
