@@ -8,56 +8,56 @@ If two or more threads are waiting for each other for ever, such type of situati
 
 ```java
 class A{
-	public synchronized void method1(B b){
-		System.out.println(Thread.currentThread().getName()+" is calling method1 ");
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println(Thread.currentThread().getName()+" is trying to call last() of class A");
-		b.last();
-	}
+    public synchronized void method1(B b){
+        System.out.println(Thread.currentThread().getName()+" is calling method1 ");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName()+" is trying to call last() of class A");
+        b.last();
+    }
 	
-	public synchronized void last(){
-		System.out.println("Classs A | last() called");
-	}
+    public synchronized void last(){
+        System.out.println("Classs A | last() called");
+    }
 }
 class B{
-	public synchronized void method2(A a){
-		System.out.println(Thread.currentThread().getName()+" is calling method2 ");
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println(Thread.currentThread().getName()+" is trying to call last() of class B");
-		a.last();
-	}
-	
-	public synchronized void last(){
-		System.out.println("Classs B | last() called");
-	}
+    public synchronized void method2(A a){
+        System.out.println(Thread.currentThread().getName()+" is calling method2 ");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName()+" is trying to call last() of class B");
+        a.last();
+    }
+
+    public synchronized void last(){
+        System.out.println("Classs B | last() called");
+    }
 }
 public class DeadlockEx extends Thread{
 
-	A a = new A();
-	B b = new B();
-	
-	public void myMethod(){
-		this.start();
-		a.method1(b);
-	}
-	
-	@Override
-	public void run() {
-		b.method2(a);
-	}
-	
-	public static void main(String[] args) {
-		DeadlockEx thread = new DeadlockEx();
-		thread.myMethod();
-	}
+    A a = new A();
+    B b = new B();
+
+    public void myMethod(){
+        this.start();
+        a.method1(b);
+    }
+
+    @Override
+    public void run() {
+        b.method2(a);
+    }
+
+    public static void main(String[] args) {
+        DeadlockEx thread = new DeadlockEx();
+        thread.myMethod();
+    }
 
 }
 ```
