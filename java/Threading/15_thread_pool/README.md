@@ -19,37 +19,38 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class PrintJob implements Runnable{
-	String name;
-	public PrintJob(String name){
-		this.name = name;
-	}
-	@Override
-	public void run() {
-		System.out.println(name+" job started by thread : "+Thread.currentThread().getName());
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println(name+" job completed by thread : "+Thread.currentThread().getName());
-	}
+    String name;
+    public PrintJob(String name){
+        this.name = name;
+    }
+    
+    @Override
+    public void run() {
+        System.out.println(name+" job started by thread : "+Thread.currentThread().getName());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(name+" job completed by thread : "+Thread.currentThread().getName());
+    }
 }
 
 public class ExecutorServiceExample{
 
-	public static void main(String[] args) {
-		PrintJob jobs[] = {new PrintJob("FirstJob"),
-				new PrintJob("SecondJob"),
-				new PrintJob("ThirdJob"),
-				new PrintJob("FourthJob"),
-				new PrintJob("FifthJob"),
-				new PrintJob("SixthJob")}; 
-		ExecutorService service = Executors.newFixedThreadPool(3);
-		for(PrintJob job : jobs){
-			service.submit(job);
-		}
-		service.shutdown();
-	}
+    public static void main(String[] args) {
+        PrintJob jobs[] = {new PrintJob("FirstJob"),
+                new PrintJob("SecondJob"),
+                new PrintJob("ThirdJob"),
+                new PrintJob("FourthJob"),
+                new PrintJob("FifthJob"),
+                new PrintJob("SixthJob")}; 
+        ExecutorService service = Executors.newFixedThreadPool(3);
+        for(PrintJob job : jobs){
+            service.submit(job);
+        }
+        service.shutdown();
+    }
 }
 ```
 
@@ -90,39 +91,40 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 class MyCallable implements Callable<Object>{
-	int num;
-	public MyCallable(int num){
-		this.num = num;
-	}
-	@Override
-	public Object call() throws Exception{
-		System.out.println(Thread.currentThread().getName()+" is resposible to calculate sum of first "+num+" numbers");
-		int sum = 0;
-		for(int i=1;i<=num;i++){
-			sum+=i;
-		}
-		return sum;
-	}
+    int num;
+        public MyCallable(int num){
+        this.num = num;
+    }
+    
+    @Override
+    public Object call() throws Exception{
+        System.out.println(Thread.currentThread().getName()+" is resposible to calculate sum of first "+num+" numbers");
+        int sum = 0;
+        for(int i=1;i<=num;i++){
+            sum+=i;
+        }
+        return sum;
+    }
 }
 
 public class CallableExample{
 
-	public static void main(String[] args) throws InterruptedException, ExecutionException {
-		MyCallable []jobs = {new MyCallable(10),
-				new MyCallable(20),
-				new MyCallable(30),
-				new MyCallable(40),
-				new MyCallable(50),
-				new MyCallable(60),
-				new MyCallable(70)};
-		
-		ExecutorService service = Executors.newFixedThreadPool(3);
-		for(MyCallable c : jobs){
-			Future<Object> future = service.submit(c);
-			System.out.println(future.get());
-		}
-		service.shutdown();
-	}
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+        MyCallable []jobs = {new MyCallable(10),
+                new MyCallable(20),
+                new MyCallable(30),
+                new MyCallable(40),
+                new MyCallable(50),
+                new MyCallable(60),
+                new MyCallable(70)};
+
+        ExecutorService service = Executors.newFixedThreadPool(3);
+        for(MyCallable c : jobs){
+            Future<Object> future = service.submit(c);
+            System.out.println(future.get());
+        }
+        service.shutdown();
+    }
 }
 ```
 
