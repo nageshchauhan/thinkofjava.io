@@ -147,3 +147,20 @@ pool-1-thread-1 is resposible to calculate some of first 70 numbers
 2485
 ```
 
+## Runnable Vs Callable
+
+### Runnable interface
+- If a thread is not required to anything after completing the job, then we should go for Runnable interface
+- It contains only one method `run()`
+- Runnable job not required to return any thing and hence return type is void.
+- Withing run method if there is any chance of raising checked exception, compulsary we should handle by using try-catch block because we cannot use throws keyword for run method.
+- It is present in `java.lang` package.
+- Introduced in java 1.0 version
+
+### Callable interface
+- If a thread required to return some value after completing the job, then we shoud go for Callable interface
+- It contains only one method `call()`
+- Callable job is required to return some value and hence the return type is `Object`
+- Withing call method if there is any chance of raising checked exception, we are not required to handle by using try-catch because call method already throws `Exception`.
+- It is present in `java.util.concurrent` package.
+- Introduced in java 1.5 version.
