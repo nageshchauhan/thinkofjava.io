@@ -15,12 +15,12 @@ ThreadGroup class present in java.lang package, and it is direct child of Object
 ```java
 public class ThreadGroupName{
 
-	public static void main(String[] args) {
-		System.out.println(Thread.currentThread().getThreadGroup().getName());
-		
+    public static void main(String[] args) {
+        System.out.println(Thread.currentThread().getThreadGroup().getName());
+
         ThreadGroup mainGroup = Thread.currentThread().getThreadGroup(); 
-		System.out.println(mainGroup.getParent().getName());
-	}
+        System.out.println(mainGroup.getParent().getName());
+    }
 }
 ```
 
@@ -58,16 +58,16 @@ Sets the maximum priority of the group. Threads in the thread group that already
 ```java
 public class ThreadGroupPriority{
 
-	public static void main(String[] args) {
-		ThreadGroup tg = new ThreadGroup("tg");
-		Thread t1 = new Thread(tg,"FirstThread");
-		Thread t2 = new Thread(tg,"SecondThread");
-		tg.setMaxPriority(3);
-		Thread t3 = new Thread(tg,"ThirdThread");
-		System.out.println(t1.getPriority());
-		System.out.println(t2.getPriority());
-		System.out.println(t3.getPriority());
-	}
+    public static void main(String[] args) {
+        ThreadGroup tg = new ThreadGroup("tg");
+        Thread t1 = new Thread(tg,"FirstThread");
+        Thread t2 = new Thread(tg,"SecondThread");
+        tg.setMaxPriority(3);
+        Thread t3 = new Thread(tg,"ThirdThread");
+        System.out.println(t1.getPriority());
+        System.out.println(t2.getPriority());
+        System.out.println(t3.getPriority());
+    }
 }
 ```
 
@@ -100,42 +100,41 @@ The value returned is only an estimate because the number of thread groups may c
 ```java
 class MyThread extends Thread{
 	
-	public MyThread(ThreadGroup g, String name){
-		super(g,name);
-	}
-	
-	@Override
-	public void run() {
-		System.out.println("Child thread -"+Thread.currentThread().getName());
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+    public MyThread(ThreadGroup g, String name){
+        super(g,name);
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Child thread -"+Thread.currentThread().getName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 public class ThreadGroupCounts{
 
-	public static void main(String[] args) throws InterruptedException {
-		ThreadGroup parent = new ThreadGroup("ParentThreadGroup");
-		ThreadGroup child = new ThreadGroup(parent,"ChildThreadGroup");
-		
-		MyThread t1 = new MyThread(parent,"Thread1");
-		MyThread t2 = new MyThread(parent,"Thread2");
-		t1.start();
-		t2.start();
-		System.out.println("Active thread count of parent group : "+parent.activeCount());
-		System.out.println("Active thread group count of parent group: "+parent.activeGroupCount());
-		parent.list();
-		
-		Thread.sleep(3000);
-		
-		System.out.println("Active thread count of parent group : "+parent.activeCount());
-		System.out.println("Active thread group count of parent group: "+parent.activeGroupCount());
-		parent.list();
-		
-	}
+    public static void main(String[] args) throws InterruptedException {
+        ThreadGroup parent = new ThreadGroup("ParentThreadGroup");
+        ThreadGroup child = new ThreadGroup(parent,"ChildThreadGroup");
+
+        MyThread t1 = new MyThread(parent,"Thread1");
+        MyThread t2 = new MyThread(parent,"Thread2");
+        t1.start();
+        t2.start();
+        System.out.println("Active thread count of parent group : "+parent.activeCount());
+        System.out.println("Active thread group count of parent group: "+parent.activeGroupCount());
+        parent.list();
+
+        Thread.sleep(3000);
+
+        System.out.println("Active thread count of parent group : "+parent.activeCount());
+        System.out.println("Active thread group count of parent group: "+parent.activeGroupCount());
+        parent.list();
+    }
 }
 ```
 
@@ -178,15 +177,15 @@ Destroys this thread group and all of its subgroups. This thread group must be e
 ```java
 public class ListThreads{
 
-	public static void main(String[] args) throws InterruptedException {
-		ThreadGroup system = Thread.currentThread().getThreadGroup().getParent();
-		Thread [] threads = new Thread[system.activeCount()];
-		system.enumerate(threads);
-		
-		for(Thread t : threads){
-			System.out.println(t.getName()+" -- "+t.isDaemon());
-		}
-	}
+    public static void main(String[] args) throws InterruptedException {
+        ThreadGroup system = Thread.currentThread().getThreadGroup().getParent();
+        Thread [] threads = new Thread[system.activeCount()];
+        system.enumerate(threads);
+
+        for(Thread t : threads){
+            System.out.println(t.getName()+" -- "+t.isDaemon());
+        }
+    }
 }
 ```
 
