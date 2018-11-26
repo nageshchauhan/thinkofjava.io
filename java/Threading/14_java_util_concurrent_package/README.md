@@ -91,20 +91,20 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockEx1{
 
-	public static void main(String[] args) throws InterruptedException {
-		ReentrantLock lock = new ReentrantLock();
-		lock.lock();
-		lock.lock();
-		System.out.println("isLocked: "+lock.isLocked());
-		System.out.println("isHeldByCurrentThread: "+lock.isHeldByCurrentThread());
-		System.out.println("QueueLength: "+lock.getQueueLength());
-		lock.unlock();
-		System.out.println("HoldCount after first unlock "+lock.getHoldCount());
-		System.out.println("isLocked: "+lock.isLocked());
-		lock.unlock();
-		System.out.println("isLocked: "+lock.isLocked());
-		System.out.println("isFair: "+lock.isFair());
-	}
+    public static void main(String[] args) throws InterruptedException {
+        ReentrantLock lock = new ReentrantLock();
+        lock.lock();
+        lock.lock();
+        System.out.println("isLocked: "+lock.isLocked());
+        System.out.println("isHeldByCurrentThread: "+lock.isHeldByCurrentThread());
+        System.out.println("QueueLength: "+lock.getQueueLength());
+        lock.unlock();
+        System.out.println("HoldCount after first unlock "+lock.getHoldCount());
+        System.out.println("isLocked: "+lock.isLocked());
+        lock.unlock();
+        System.out.println("isLocked: "+lock.isLocked());
+        System.out.println("isFair: "+lock.isFair());
+    }
 }
 ```
 
@@ -127,47 +127,47 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class Display{
 	
-	ReentrantLock l = new ReentrantLock();
-	
-	public void wish(String name){
-		l.lock();
-		for(int i=0;i<2;i++){
-			System.out.print("Welcome ");
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			System.out.println(name);
-		}
-		l.unlock();
-	}
+    ReentrantLock l = new ReentrantLock();
+
+    public void wish(String name){
+        l.lock();
+        for(int i=0;i<2;i++){
+            System.out.print("Welcome ");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(name);
+        }
+        l.unlock();
+    }
 }
 class MyThread extends Thread{
 	
-	Display d;
-	String name;
-	
-	public MyThread(Display d, String name){
-		this.d = d;
-		this.name = name;
-	}
-	
-	@Override
-	public void run() {
-		d.wish(name);
-	}
+    Display d;
+    String name;
+
+    public MyThread(Display d, String name){
+        this.d = d;
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        d.wish(name);
+    }
 }
 
 public class ReentrantLockEx2{
 
-	public static void main(String[] args) throws InterruptedException {
-		Display d = new Display();
-		MyThread t1 = new MyThread(d,"FirstThread");
-		MyThread t2 = new MyThread(d,"SecondThread");
-		t1.start();
-		t2.start();
-	}
+    public static void main(String[] args) throws InterruptedException {
+        Display d = new Display();
+        MyThread t1 = new MyThread(d,"FirstThread");
+        MyThread t2 = new MyThread(d,"SecondThread");
+        t1.start();
+        t2.start();
+    }
 }
 ```
 
@@ -187,36 +187,36 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class MyThread extends Thread{
 	
-	static ReentrantLock l = new ReentrantLock();
+    static ReentrantLock l = new ReentrantLock();
 	
-	public MyThread(String name){
-		super(name);
-	}
+    public MyThread(String name){
+        super(name);
+    }
 	
-	@Override
-	public void run() {
-		if(l.tryLock()){
-			System.out.println(Thread.currentThread().getName()+" got the lock and performing safe operation");
-			try {
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			
-		}else{
-			System.out.println(Thread.currentThread().getName()+" unable to get lock and hence performing alternate operation");
-		}
-	}
+    @Override
+    public void run() {
+        if(l.tryLock()){
+            System.out.println(Thread.currentThread().getName()+" got the lock and performing safe operation");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }else{
+            System.out.println(Thread.currentThread().getName()+" unable to get lock and hence performing alternate operation");
+        }
+    }
 }
 
 public class ReentrantLockEx3{
 
-	public static void main(String[] args) {
-		MyThread t1 = new MyThread("FirstThread");
-		MyThread t2 = new MyThread("SecondThread");
-		t1.start();
-		t2.start();
-	}
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread("FirstThread");
+        MyThread t2 = new MyThread("SecondThread");
+        t1.start();
+        t2.start();
+    }
 }
 ```
 
@@ -235,40 +235,40 @@ import java.util.concurrent.TimeUnit;
 
 class MyThread extends Thread{
 	
-	static ReentrantLock l = new ReentrantLock();
+    static ReentrantLock l = new ReentrantLock();
+
+    public MyThread(String name){
+        super(name);
+    }
 	
-	public MyThread(String name){
-		super(name);
-	}
-	
-	@Override
-	public void run() {
-		do{
-		try {
-			if(l.tryLock(1,TimeUnit.SECONDS)){
-				System.out.println(Thread.currentThread().getName()+" got the lock");
-				Thread.sleep(3000);
-				l.unlock();
-				System.out.println(Thread.currentThread().getName()+" released lock");
-				break;
-			}else{
-				System.out.println(Thread.currentThread().getName()+" unable to get lock trying again");
-			}
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		}while(true);
-	}
+    @Override
+    public void run() {
+        do{
+            try {
+                if(l.tryLock(1,TimeUnit.SECONDS)){
+                    System.out.println(Thread.currentThread().getName()+" got the lock");
+                    Thread.sleep(3000);
+                    l.unlock();
+                    System.out.println(Thread.currentThread().getName()+" released lock");
+                    break;
+                }else{
+                    System.out.println(Thread.currentThread().getName()+" unable to get lock trying again");
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }while(true);
+    }
 }
 
 public class ReentrantLockEx4{
 
-	public static void main(String[] args) {
-		MyThread t1 = new MyThread("FirstThread");
-		MyThread t2 = new MyThread("SecondThread");
-		t1.start();
-		t2.start();
-	}
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread("FirstThread");
+        MyThread t2 = new MyThread("SecondThread");
+        t1.start();
+        t2.start();
+    }
 }
 ```
 
