@@ -1,4 +1,4 @@
 [Back to Threading](../README.md)
 # Thread Lifecycle
 
-This page is under construction... stay tuned for update.
+<img src="../../../assets/images/threading/thread_lifecycle.png"></img>

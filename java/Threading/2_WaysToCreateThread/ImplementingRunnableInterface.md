@@ -2,7 +2,7 @@
 # By implementing Runnable Interface
 We can define a thread by implmenting Runnable interface. Runnable interface present in java.lang package and contains only one method that is **run()**.
 
-![Threading Hierarchy](../../../assets/images/threadHierarchy.png)
+![Threading Hierarchy](../../../assets/images/threading/ways_thread_created.png)
 
 **Example:**
 
@@ -21,6 +21,7 @@ class MyRunnable imlements Runnable{
 }
 ```
 Output will be
+
 ```
 Child thread
 Main thread executed

@@ -23,6 +23,6 @@ main thread is responsible to call main method.
 ## **2. By implementing Runnable interface:**
 We can define a thread by implmenting Runnable interface. Runnable interface present in java.lang package and contains only one method that is **run()**.
 
-![Threading Hierarchy](../../../assets/images/threadHierarchy.png)
+![Threading Hierarchy](../../../assets/images/threading/ways_thread_created.png)
 
 [Read in detail](ImplementingRunnableInterface.md)

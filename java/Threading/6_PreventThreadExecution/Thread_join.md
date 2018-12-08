@@ -89,4 +89,4 @@ MyThread completes execution
 ```
 ## Lifecycle of thread in Thread.join()
 
-![Threading Hierarchy](../../../assets/images/threading/thread_join.png)
+<img src="../../../assets/images/threading/thread_join.png" alt="Thread join hierarchy" height="800" width="500"></img>

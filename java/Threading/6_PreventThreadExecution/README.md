@@ -20,6 +20,12 @@ There is no guarantee that Yield will make the currently executing thread to run
 
 ## `join()` method
 
+If a thread wants to wait until completing some other thread, then we should go for join() method. For example, if thread t1 executes t2.join() then t1 thread will enter into waiting state until t2 completes. Once thread t2 completes then t1 will start its execution.
 
+[Click here to read in detail](Thread_join.md)
 
 ## `sleep()` method
+
+If a thread don’t want to perform any operation for a particular amount of time(just pausing) then we should go for sleep().
+
+[Click here to read in detail](Thread_sleep.md)

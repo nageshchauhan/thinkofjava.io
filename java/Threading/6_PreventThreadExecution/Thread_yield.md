@@ -12,6 +12,7 @@ There is no guarantee that Yield will make the currently executing thread to run
 `public static native void yield();`
 
 Example:
+
 ```java
 class Hey extends Thread{
     public void run() {
@@ -41,6 +42,7 @@ public class SynchronizedBlock {
 }
 ```
 If we comment the both `Thread.yield()` line in above example then we might end up getting below output: 
+
 ```
 Hey class 0
 Hey class 1
@@ -56,6 +58,7 @@ Hello class 4
 
 If we put `Thread.yield()` then whenever the thread will execute, it will stop and give chance to other thread of same priority.
 So we might end up getting below output:
+
 ```
 Hello class 0
 Hey class 0
@@ -68,3 +71,7 @@ Hello class 3
 Hey class 4
 Hello class 4
 ```
+
+## Lifecycle of Thread.yield();
+
+<img src="../../../assets/images/threading/thread_yield.png" width="350" height="850"></img>
