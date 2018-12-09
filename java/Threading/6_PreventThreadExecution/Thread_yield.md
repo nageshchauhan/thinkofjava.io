@@ -74,4 +74,4 @@ Hello class 4
 
 ## Lifecycle of Thread.yield();
 
-<img src="../../../assets/images/threading/thread_yield.png" width="350" height="850"></img>
+<img src="../../../assets/images/threading/thread_yield.png" width="350" height="850" />

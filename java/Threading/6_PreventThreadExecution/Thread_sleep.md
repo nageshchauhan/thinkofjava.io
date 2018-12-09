@@ -34,4 +34,4 @@ In the above output, first line will be printed instantly, and the next line wil
 
 ## Lifecycle of Thread.sleep();
 
-<img src="../../../assets/images/threading/thread_sleep.png" width="520" height="850"></img>
+<img src="../../../assets/images/threading/thread_sleep.png" width="520" height="850"/>
