@@ -9,7 +9,7 @@ If a thread wants to call `wait()`, `notify()` and `notifyAll()` methods, then t
 
 If a thread calls `wait()` method, it releases the lock immediately and entered into waiting state. Thread releases the lock of only current object but not all locks. After calling `notify()`, `notifyAll()` methods, thread releases the lock but not immediately. Except `wait()`,`notify()` and `notifyAll()`, there is no other case where thread releases the lock.
 
-<img src="../../../assets/images/threading/inter_thread_comm.png" width="550" height="850"></img>
+<img src="../../../assets/images/threading/inter_thread_comm.png" width="550" height="850">
 
 ### Method signature
 1. `public final void wait() throws InterruptedException;`
