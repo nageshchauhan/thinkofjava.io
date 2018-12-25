@@ -21,13 +21,13 @@ It is child interface of `Collection`. If we want to represent a group of indivi
 
 In 1.2 version `Vector` and `Stack` classes are re-engineered to implement `List` interface.
 
-<img src="add_image">
+<img src="../../../assets/images/collections/list_interface.png"/>
 
 ### 3) Set(I)
 
 It is child interface of `Collection`. If we want to represent a group of individual objects as a single entity where duplicates are not allowed and insertion order not required then we should go for `Set`.
 
-<img src="add image of Set hierarchy">
+<img src="../../../assets/images/collections/set_interface.png"/>
 
 ### 4) SortedSet(I)
 
@@ -37,13 +37,13 @@ It is child interface of `Set`. If we want to represent a group of individual ob
 
 It is child interface of `SortedSet`. It contains several methods for navigation purposes.
 
-<img src="navigable set hierarchy">
+<img src="../../../assets/images/collections/navigable_set.png"/>
 
 ### 6) Queue(I)
 It is the child interface of `Collection`. If we want to represent a group of individual objects prior to processing then we should go for `Queue`. Usually queue follows First In First Out order but based on our requirement we can implement our own priority order.<br>
 E.g. Before sending mail, all mail ids needs to be store in some data structure. The order in which we added mail ids, same order is maitained for delivery mail so for this requirement Queue is best choice.
 
-<img src="queue hierarchy">
+<img src="../../../assets/images/collections/queue_interface.png"/>
 
 #### Note: 
 All the above interfaces(Collection, List, Set, SortedSet, NavigableSet and Queue) meant for representing a group of individual objects. If we want to represent a group of objects as key value pair then we should go for Map interface
@@ -52,7 +52,7 @@ All the above interfaces(Collection, List, Set, SortedSet, NavigableSet and Queu
 
 `Map` is <b>not</b> a child interface of `Collection`. If we want to represent a  group of objects as key value pair then we should go for `Map`. Both key and value can be any objects. Duplicate keys are not allowed but values can be duplicated.
 
-<img src="hierarchy of map">
+<img src="../../../assets/images/collections/map.png"/>
 
 
 ### 8) SortedMap(I)
@@ -63,10 +63,15 @@ It is child interface of Map. If we want to represent a group of key value pairs
 
 It is the child interface of `SortedMap`. It defines several methods for navigation purposes.
 
-<img src="navigable map hierarchy diagram">
+<img src="../../../assets/images/collections/navigable_map.png"/>
 
 
-<img src = "conclusion diagram of collection framework">
+-----------------
+## Collection framework conclusion diagram
+
+<img src="../../../assets/images/collections/collection_whole.png"/>
+
+<img src="../../../assets/images/collections/map_whole.png"/>
 
 The following are legacy entity present in Collection framework from version 1.0 <br>
 1) Enumeration (Interface) <br>

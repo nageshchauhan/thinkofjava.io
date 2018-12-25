@@ -2,7 +2,7 @@
 
 # Bounded types
 
-We can bound the type parameter to a particular range by using extends keyword, such types are called bounded types. 
+We can bound the type parameter to a particular range by using extends keyword, such types are called bounded types. <br>
 Eg.1. `class Test<T> {  }`
 
 As the type parameter we can pass any type and there is no restriction hence it is unbounded type.

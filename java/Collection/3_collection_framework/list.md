@@ -1,6 +1,6 @@
 [Back to Collection](../README.md)
 
-# List (I)
+# List [I, v1.2]
 
 List is child interface of Collection. If we want to represent a group of individual object as a single entity where duplicates are allowed and insertion order must be preserved, then we should go for List.
 
@@ -22,7 +22,9 @@ We can preserve insertion order via index and we can differentiate duplicate obj
 3. Vector [class, v1.0]
 4. Stack [class, v1.0]
 
-## ArrayList [class, v1.2]
+<img src="../../../assets/images/collections/list_interface.png"/>
+
+## ArrayList [Class, v1.2]
 
 --> The underlying data structure is resizable array or growable array.<br>
 --> Duplicates objects are allowed <br>
@@ -33,7 +35,7 @@ We can preserve insertion order via index and we can differentiate duplicate obj
 
 ### Constructors
 1. `ArrayList l = new ArrayList()`<br>
-Creates an empty ArrayList object with default initial capacity 10. Once it is reaches its max capacity then a new ArrayList object will be created with new Capacity = ((Current capacity * 3/2) +1).
+Creates an empty ArrayList object with default initial capacity 10. Once it is reaches its max capacity then a new ArrayList object will be created with **new Capacity = ((Current capacity x 3/2) +1)**.
 
 2. `ArrayList l = new ArrayList(int initialCapacity)`<br>
 Creates an empty ArrayList object with specified initial capacity.
@@ -77,7 +79,7 @@ Usually we can use collection to hold and transfer object from one location to a
 
 ArrayList and Vector classes implements RandomAccess interface so that any random element can be accessed with same speed.
 
-### RandomAccess(I)
+### RandomAccess[I, v1.4]
 This interface present in `java.util` package and it doesn't have any methods. It is a marker interface, where required ability will be provided automatically by JVM.
 
 ArrayList is **best** if our frequent operation is retrieval (because ArrayList implements RandomAccess interface).
@@ -116,15 +118,15 @@ Similarly we can get synchronized version of Set and Map object by using synchro
 `public static Set synchronizedSet(Set s);`<br>
 `public static Map synchronizedMap(Map m);`
 
-## LinkedList(Class)
-The underlying data structure is Doubly LinkedList.  <br>
-Insertion order is preserved. <br>
-Duplicate objects are allowed. <br>
-Heterogeneous objects are allowed. <br>
-Null insertion is possible. <br>
-It implements Serializable and Cloneable interface. <br>
-It is best, if our frequent operation is insertion or deletion in between. <br>
-And it is worst, if our frequent operation is retrieval.
+## LinkedList[Class, v1.2]
+--> The underlying data structure is Doubly LinkedList.  <br>
+--> Insertion order is preserved. <br>
+--> Duplicate objects are allowed. <br>
+--> Heterogeneous objects are allowed. <br>
+--> Null insertion is possible. <br>
+--> It implements Serializable and Cloneable interface. <br>
+--> It is best, if our frequent operation is insertion or deletion in between. <br>
+--> And it is worst, if our frequent operation is retrieval.
 
 ### Constructors
 1. `LinkedList l = new LinkedList()`<br>
@@ -135,11 +137,11 @@ Creates an equivalent linked list object for the given collection.
 
 ### LinkedList class specific methods:
 Usually we can use linked list to develop stack and queue. To provide support for this requirement, linked list defines following methods:<br>
-1. `void addFirst(Object o)`
-2. `void addLast(Object o)`
-3. `Object getFirst()`
-4. `Object getLast()`
-5. `Object removeFirst()`
+1. `void addFirst(Object o)` <br>
+2. `void addLast(Object o)` <br>
+3. `Object getFirst()`<br>
+4. `Object getLast()`<br>
+5. `Object removeFirst()`<br>
 6. `Object removeLast()`
 
 Example:
@@ -174,8 +176,144 @@ Output:
 [H, E, 10, null, A]
 [T, H, E, 10, null]
 ```
+### Difference between ArrayList and LinkedList
+
+#### ArrayList
+1. It is best choice if our frequent operation is retrieval.
+2. It is worst in case of frequent insertion or deletion because internally several shift operations are performed.
+3. The elements are stored in consecutive memory location hence retrieval operation is easy.
+
+#### LinkedList
+1. It is best choice if our frequent operation is addition or deletion of element.
+2. It is worst in case of frequent retrieval of elements.
+3. The elements are not stored in consecutive memory location hence retrieval operation become complex
 
 
-## Vector(class)
+## Vector[class, v1.0]
+1. The underlying data structure is resizable array or growable array. <br>
+2. Insertion order preserved. <br>
+3. Duplicate elements are allowed. <br>
+4. Heterogeneous elements are allowed. <br>
+5. Null insertion is possible. <br>
+6. It implements `Serializable`, `Cloneable` and `RandomAccess` interface <br>
+7. Every method is synchronized hence Vector object is thread safe.
 
-## Stack(Class)
+### Constructors
+
+1. `Vector v = new Vector()` <br>
+Creates an empty vector object with default initial capacity 10. Once vector reaches its max capacity then a new vector object will be created with **New capacity = Current capacity x 2**.
+
+2. `Vector v = new Vector(int initialCapacity)` <br>
+Creates and empty vector object with specified initial capacity.
+
+3. `Vector v = new Vector(int initialCapacity, int incrementalCapacity)`<br>
+
+4. `Vector v = new Vector(Collection c)` <br>
+Creates an equivalent vector object for given collection. This constructor meant for inter-conversion between collection objects.
+
+### Vector specific method
+
+**To Add objects** <br>
+1. `add(Object o)` --- from collection interface <br>
+2. `add(int index, Object o)` --- from list interface <br>
+3. `addElement(Object o)` --- from Vector class
+
+**To remove object/s** <br>
+1. `remove(Object c)` --- from collection interface <br>
+2. `remove(int index)` --- from list interface <Br>
+3. `removeElement(Object o)` --- from vector class<br>
+4. `removeElementAt(Object o)` --- from vector class <br>
+5. `clear()` --- from collection interface <br>
+6. `removeAllElements()` --- from vector class
+
+**To retrieve Object**<br>
+1. `Object get(int index)` --- from list interface <br>
+2. `Object elementAt(int index)` --- from vector class <br>
+3. `Object firstElement()` --- from vector class <br>
+4. `Object lastElement()` --- from vector class  <br>
+
+**Other methods** <br>
+1. `int size()` <br>
+2. `int capacity()` <br>
+3. `Enumeration elements()` <br> 
+
+###Example:
+
+```java
+import java.util.Vector;
+
+public class VectorExample {
+
+	public static void main(String[] args) {
+		Vector v = new Vector();
+		System.out.println(v.capacity());
+		for(int i=0;i<10;i++){
+			v.addElement(i);
+		}
+		System.out.println(v.capacity());
+		v.addElement("A");
+		System.out.println(v.capacity());
+		System.out.println(v);
+	}
+}
+```
+
+Output:
+
+```
+10
+10
+20
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A]
+```
+
+## Stack[Class, v1.0]
+It is child class of Vector class. This class is specially designed for Last In First Out(LIFO) order.
+
+ 
+### Constructor
+
+`Stack s = new Stack()`
+ 
+### Methods
+1. `Object push(Object o)` <br>
+To insert an object into the stack
+
+2. `Object pop()` <br>
+to remove and return top of the stack
+
+3. `Object peek()` <br>
+to return top of the stack without removal
+
+4. `boolean empty()` <br>
+Returns true of stack is empty else false.
+
+5. `int search(Object o)` <br>
+Returns offset if the element is available otherwise returns -1
+
+### Example:
+
+```java
+import java.util.Stack;
+
+public class StackExample {
+
+	public static void main(String[] args) {
+		Stack s = new Stack();
+		s.push("A");
+		s.push("B");
+		s.push("C");
+		System.out.println(s);
+		System.out.println(s.search("A"));
+		System.out.println(s.search("Z"));
+	}
+}
+```
+
+Output:
+
+```
+[A, B, C]
+3
+-1
+```

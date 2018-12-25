@@ -7,8 +7,8 @@
 3. Collection Framework
     - [Collection](3_collection_framework/collection.md)
     - [List](3_collection_framework/list.md)
-    - Set
-    - Cursors
+    - [Set](3_collection_framework/set.md)
+    - [Cursors](3_collection_framework/cursor.md)
     - Comparable and Comparator
     - Map
     - 1.5 version enhancement
