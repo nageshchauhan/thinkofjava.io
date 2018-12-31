@@ -188,3 +188,110 @@ headSet(106): [100, 101, 104]
 tailSet(106): [106, 110, 115, 120]
 subSet(101,115): [101, 104, 106, 110]
 ```
+
+## TreeSet [class, v1.2]
+
+--> Underlying data structure is Balanced Tree. <br>
+--> Duplicate objects are not allowed. <br>
+--> Insertion order is not preserved. <br>
+--> Heterogeneous objects are not allowed otherwise we will get Runtime Exception saying ClassCastException. <br>
+--> Null insertion is allowed (only once)[till 1.6 verion]. <br>
+--> Implements `Serializable` and `Cloneable` but not `RandomAccess`. <Br>
+--> All objects will be inserted based on some sorting order, it may be default natural sorting order or customized sorting order
+
+### Constructor
+1. `TreeSet t = new TreeSet()` <br>
+Creates an empty `TreeSet` object where the elements will be inserted according to default natural sorting order.
+
+2. `TreeSet t = new TreeSet(Comparator c)` <br>
+Creates an empty `TreeSet` object where the elements will be inserted according to customized sorting order specified by `Comparator` object.
+
+3. `TreeSet t = new TreeSet(Collection c)` <br>
+4. `TreeSet t = new TreeSet(SortedSet s)`
+
+### Example: 1
+
+```java
+import java.util.TreeSet;
+
+public class TreeSetExample {
+
+	public static void main(String[] args) {
+		
+		TreeSet t = new TreeSet();
+		
+		t.add("A");
+		t.add("a");
+		t.add("B");
+		t.add("Z");
+		t.add("T");
+		//t.add(new Integer(4));// will throw ClassCastException
+		//t.add(null); // will throw NullPointerException
+		
+		System.out.println(t);
+	}
+}
+```
+
+Output:
+
+```
+[A, B, T, Z, a]
+```
+
+### Null Acceptance
+
+1. For non empty `TreeSet`, if we are trying to insert `null` then we will get `NullPointerException`.
+2. For empty `TreeSet`, as a first element `null` is allowed but after inserting `null` if we try to insert any other element then we will get Runtime exception saying NullPointerException.
+
+**Note**: Until 1.6 version null is allowed as first element to empty `TreeSet` but from 1.7 onwards null is not allowed even as first element. So from 1.7 version onwards null is not allowed in `TreeSet`.
+
+### Example: 2
+
+```java
+import java.util.TreeSet;
+
+public class ListExample {
+
+	public static void main(String[] args) {
+		
+		TreeSet t = new TreeSet();
+		t.add(new StringBuffer("A"));
+		t.add(new StringBuffer("B"));
+		t.add(new StringBuffer("Z"));
+		t.add(new StringBuffer("L"));
+		
+		System.out.println(t);
+	}
+}
+```
+
+Output:
+
+```java
+Exception in thread "main" java.lang.ClassCastException: java.lang.StringBuffer cannot be cast to java.lang.Comparable
+	at java.util.TreeMap.compare(TreeMap.java:1294)
+	at java.util.TreeMap.put(TreeMap.java:538)
+	at java.util.TreeSet.add(TreeSet.java:255)
+```
+
+If we are depending on default natural sorting order, compulsory the object should be **homogeneous** and **comparable**, otherwise we will get runtime exception saying ClassCastException. An object is said to be comparable iff corresponding class implements `Comparable` interface. 
+
+`String` class and all wrapper classes already implements `Comparable` interface, but `StringBuffer` class doesn't implement `Comparable` interface hence we got ClassCastException in this example.
+
+
+If we are depending on default natural sorting order then while adding object into `TreeSet`, jvm will call `compareTo()` method.
+
+```java
+TreeSet t = new TreeSet();
+t.add("K");
+t.add("Z");
+t.add("A");
+t.add("A");
+```
+
+output
+
+```java
+[A, K, Z]
+```

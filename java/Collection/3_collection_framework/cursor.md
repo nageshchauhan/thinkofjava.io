@@ -8,7 +8,7 @@ If we want to get object one by one from collection then we should go for cursor
 2. Iterator
 3. ListIterator
 
-###1. Enumeration[interface, v1.0]: <br>
+### 1. Enumeration[interface, v1.0]: <br>
  We can use enumeration to get objects one by one from legacy collection object. 
 
 #### Methods in Enumeration
@@ -133,7 +133,7 @@ Output:
 
 To overcome above limitations, we should go for ListIterator. 
 
-### ListIterator
+### 3. ListIterator
 
 We can move forward or backward  by using ListIterator. Hence it is bidirectional cursor. We can perform replacement and addition of new objects in addition to Read and Remove operations.
 
@@ -230,3 +230,49 @@ java.util.Vector$1. // 1 represent anonymous class
 java.util.Vector$Itr
 java.util.Vector$ListItr
 ```
+Comparison table for cursors:
+
+<table border="1">
+    <tr>
+        <th>Property</th>
+        <th>Enumeration (v1.0)</th>
+        <th>Iterator (v1.2)</th>
+        <th>ListIterator (v1.2)</th>
+    </tr>
+    <tr>
+        <th>Is it legacy?</th>
+        <td>Yes</td>
+        <td>No</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <th>It is applicable</th>
+        <td>only for legacy classes</td>
+        <td>for any collection objects</td>
+        <td>only for List type objects</td>
+    </tr>
+    <tr>
+        <th>Movement</th>
+        <td>Single direction (forward)</td>
+        <td>Single direction (forward)</td>
+        <td>Bi-direction (forward & backward)</td>
+    </tr>
+    <tr>
+        <th>How to get it?</th>
+        <td>By using elements() method</td>
+        <td>By using iterator() method</td>
+        <td>By using listIterator() method</td>
+    </tr>
+    <tr>
+        <th>Accessibility</th>
+        <td>only read</td>
+        <td>read and remove</td>
+        <td>read / remove / add / replace</td>
+    </tr>
+    <tr>
+        <th>Method</th>
+        <td>hasMoreElements(), nextElement()</td>
+        <td>hasNext(), next(), remove()</td>
+        <td>9 methods</td>
+    </tr>
+</table>
