@@ -10,7 +10,7 @@
     - [Set](3_collection_framework/set.md)
     - [Cursors](3_collection_framework/cursor.md)
     - [Comparable and Comparator](3_collection_framework/comparable_and_comparator.md)
-    - Map
+    - [Map](3_collection_framework/map.md)
     - 1.5 version enhancement
     - 1.6 version enhancement
 4. Collections class
