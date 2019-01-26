@@ -114,3 +114,17 @@ public <T extends Runnable & Number> void m1(); // Invalid
 public <T extends Number & Thread> void m1(); // Invalid
         //because we cannot extends multiple classes
 ```
+
+
+<br>
+
+<div style="float:left">
+  <a href="../3_bounded_types/README.md" style=""><-- Bounded types</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../5_communication_with_non_generic_code/README.md" style="">Next: Communication with non-generic code --></a>
+</div>
+
+<br>

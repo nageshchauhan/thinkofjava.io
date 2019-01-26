@@ -564,3 +564,17 @@ STATUS=Done
 USERNAME=abc
 PASSWORD=password
 ```
+
+
+<br>
+
+<div style="float:left">
+  <a href="../3_collection_framework/comparable_and_comparator.md" style=""><-- Comparable and Comparator</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/1_5_version_enhancement.md" style="">Next: 1.5 version enhancement --></a>
+</div>
+
+<br>

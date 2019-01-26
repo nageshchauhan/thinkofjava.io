@@ -295,3 +295,16 @@ output
 ```java
 [A, K, Z]
 ```
+
+<br>
+
+<div style="float:left">
+  <a href="../3_collection_framework/list.md" style=""><-- List</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/cursor.md" style="">Next: Cursors--></a>
+</div>
+
+<br>

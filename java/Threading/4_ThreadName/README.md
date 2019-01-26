@@ -82,3 +82,16 @@ Child Thread name: Thread-1
 
 
 In the above example, main thread is creating a new thread object **t1**, and this new thread will be the child thread of main. So the jvm will provide default name as **Thread-0, Thread-1 and so on** . The name of thread can be changed with the help of `setName` method of thread class.
+
+<br>
+
+<div style="float:left">
+  <a href="../3_ThreadLifecycle/README.md" style=""><-- Thread Lifecylce</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../5_ThreadPriority/README.md" style="">Thread Priority --> </a>
+</div>
+
+<br>

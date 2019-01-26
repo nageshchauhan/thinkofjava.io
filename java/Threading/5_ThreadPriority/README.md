@@ -46,3 +46,16 @@ If the underlying OS supports thread priority then possible output will be:
 This line executed by Thread-0
 Main thread executed
 ```
+
+<br>
+
+<div style="float:left">
+  <a href="../4_ThreadName/README.md" style=""><-- Getting and Setting Thread name</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../6_PreventThreadExecution/README.md" style="">Next: Prevent Thread Execution --> </a>
+</div>
+
+<br>

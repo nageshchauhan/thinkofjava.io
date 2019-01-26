@@ -84,3 +84,16 @@ synchronized(s2){
     //This will work properly, because we have acquired lock on s2 object.
 }
 ```
+
+<br>
+
+<div style="float:left">
+  <a href="../9_class_level_vs_object_level_lock/README.md" style=""><-- Class level vs Object level lock</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../11_deadlock/README.md" style="">Next: Deadlock --> </a>
+</div>
+
+<br>

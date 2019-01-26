@@ -26,3 +26,17 @@ We can define a thread by implmenting Runnable interface. Runnable interface pre
 ![Threading Hierarchy](../../../assets/images/threading/ways_thread_created.png)
 
 [Read in detail](ImplementingRunnableInterface.md)
+
+
+<br>
+
+<div style="float:left;">
+<a href="../1_Introduction/README.md"><-- Introduction</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../2_WaysToCreateThread/ExtendingThreadClass.md" style="">Next: by extending Thread class --></a>
+</div>
+
+<br>

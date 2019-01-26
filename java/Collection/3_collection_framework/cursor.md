@@ -276,3 +276,18 @@ Comparison table for cursors:
         <td>9 methods</td>
     </tr>
 </table>
+
+
+<br>
+
+<div style="float:left">
+  <a href="../3_collection_framework/set.md" style=""><-- Set</a>
+</div>
+
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/comparable_and_comparator.md" style="">Next: Comparable and Comparator --></a>
+</div>
+
+<br>

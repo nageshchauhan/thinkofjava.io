@@ -19,3 +19,15 @@ Executing several tasks simultneously is called multitasking. It is divided into
   
   Java provides inbuilt support for multitasking by introducing a rich API(Thread, Runnable, ThreadGroup, ThreadLocal, etc). Being a programmer we have to know, how to use this API and we are not responsible to define that API. Hence, developing multithreading program is easy in java when compared with c++. <br><br>
   
+
+
+<div style="float:left;">
+<a href="../README.md"><-- Back to Threading</a>
+</div>
+
+
+
+<div style="float:right">
+  <a href="../2_WaysToCreateThread/README.md" style="">Next: Ways to define thread --></a>
+</div>
+

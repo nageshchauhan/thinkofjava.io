@@ -193,3 +193,13 @@ If we are mainitaining InheritableThreadLocal and not overriding `childValue()` 
 Parent Thread value: parentValue
 Child thread value: parentValue
 ```
+
+
+<br>
+
+<div style="float:left">
+  <a href="../15_thread_pool/README.md" style=""> <-- Thread Pool</a>
+</div>
+
+
+<br>

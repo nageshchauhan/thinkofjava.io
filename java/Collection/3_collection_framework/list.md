@@ -317,3 +317,18 @@ Output:
 3
 -1
 ```
+
+<br>
+
+
+<div style="float:left">
+  <a href="../3_collection_framework/collection.md" style=""><-- Collection</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/set.md" style="">Next: Set --></a>
+</div>
+
+
+<br>

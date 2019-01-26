@@ -43,3 +43,17 @@ If main thread got first chance then above output will get. If we comment `t.int
 `t.interrupt()` is executed by main thread, so main thread will interrupt its child ie MyThread and it will raise InterruptedException.
 
 Whenever we are calling `interrupt()` method, if the target thread is not in sleeping or waiting state then there is no impact immediately. interrupt call will wait until target thread entered into sleeping or waiting state. Once target thread entered into sleeping or waiting state, the interrupt call will impact the target thread.
+
+
+<br>
+
+<div style="float:left">
+  <a href="../6_PreventThreadExecution/Thread_sleep.md" style=""> <-- sleep() </a>
+</div>
+
+
+<div style="float:right">
+  <a href="../8_synchronization/README.md" style=""> Next: Synchronization --> </a>
+</div>
+
+<br>

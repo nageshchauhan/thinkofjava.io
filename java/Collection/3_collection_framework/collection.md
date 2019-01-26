@@ -20,3 +20,19 @@ If we want to represent a group of individual object as a single entity then we 
 12. `Iterator iterator()` <br>
 
 **Note:** There is no concrete class which implements collection interface directly.
+
+
+<br>
+
+
+<div style="float:left">
+  <a href="../2_key_interface/README.md" style=""><-- Important interface in Collection framework</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/list.md" style="">Next: List--></a>
+</div>
+
+
+<br>

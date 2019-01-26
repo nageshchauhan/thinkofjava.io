@@ -94,3 +94,17 @@ class DemoClass{
 6. Synchronized methods in Java put a performance cost on your application. So use synchronization when it is absolutely required. Also, consider using synchronized code blocks for synchronizing only critical section of your code.
 7. **It’s possible that both static synchronized and non static synchronized method can run simultaneously or concurrently because they lock on different object.**
 8. According to the Java language specification you can not use synchronized keyword with constructor. It is illegal and result in compilation error.
+
+
+<br>
+
+<div style="float:left">
+  <a href="../8_synchronization/README.md" style=""> <-- Synchronization </a>
+</div>
+
+
+<div style="float:right">
+  <a href="../10_Inter_thread_comm/README.md" style=""> Next: Inter Thread communication --> </a>
+</div>
+
+<br>

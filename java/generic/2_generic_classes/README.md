@@ -95,3 +95,16 @@ Parameter type is: java.lang.Integer
 value : 10
 ```
 
+<br> 
+
+<div style="float:left;">
+<a href="../1_Introduction/README.md"><-- Introduction </a>
+</div>
+
+
+
+<div style="float:right">
+  <a href="../3_bounded_types/README.md" style="">Next: Bounded types --></a>
+</div>
+
+<br>

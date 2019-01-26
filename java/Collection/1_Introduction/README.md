@@ -75,3 +75,18 @@ If we want to represent a group of individual object as a single entity then we 
 ### Collection Framework
 
 It contains several classes and interfaces which can be used to represent a group of individual object as a single entity.
+
+
+<br>
+
+<div style="float:left;">
+<a href="../README.md"><-- Back to Collection</a>
+</div>
+
+
+
+<div style="float:right">
+  <a href="../2_key_interface/README.md" style="">Next: Important interface in Collection framework --></a>
+</div>
+
+<br>

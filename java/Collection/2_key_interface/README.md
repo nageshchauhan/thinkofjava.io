@@ -80,3 +80,17 @@ The following are legacy entity present in Collection framework from version 1.0
 4) Stack (Class) <br>
 5) Hashtable (Class) <br>
 6) Properties (Class) <br>
+
+
+<br>
+
+<div style="float:left;">
+<a href="../1_Introduction/README.md"><-- Introduction </a>
+</div>
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/collection.md" style="">Next: Collection --></a>
+</div>
+
+<br>

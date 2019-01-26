@@ -345,3 +345,18 @@ Output:
 2. This interface present in `java.util` package.
 3. Defines two methods `compare()` and `equals()`.
 4. No pre-defined class implements Comparator (Except `Collator` and `RuleBasedCollator` classes).
+
+
+<br>
+
+<div style="float:left">
+  <a href="../3_collection_framework/cursor.md" style=""><-- Cursors</a>
+</div>
+
+
+<div style="float:right">
+  <a href="../3_collection_framework/map.md" style="">Next: Map--></a>
+</div>
+
+
+<br>
