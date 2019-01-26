@@ -68,7 +68,7 @@ To overcome above problems of array, we should go for Collection.
 
 ----------------
 
-##Collection
+## Collection
 
 If we want to represent a group of individual object as a single entity then we should go for collection.
 
@@ -76,17 +76,7 @@ If we want to represent a group of individual object as a single entity then we 
 
 It contains several classes and interfaces which can be used to represent a group of individual object as a single entity.
 
-
-<br>
-
-<div style="float:left;">
-<a href="../README.md"><-- Back to Collection</a>
-</div>
-
-
-
-<div style="float:right">
-  <a href="../2_key_interface/README.md" style="">Next: Important interface in Collection framework --></a>
-</div>
+<Br>
+[<-- Back to Collection](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Important interface in Collection framework -->](../2_key_interface/README.md)
 
 <br>
