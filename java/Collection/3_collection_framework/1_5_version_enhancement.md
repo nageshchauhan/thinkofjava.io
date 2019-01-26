@@ -127,17 +127,10 @@ Output:
 [Z, L, B, A]
 ```
 
-<br>
 
+<Br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/map.md" style=""><-- Map</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../3_collection_framework/1_6_version_enhancement.md" style="">Next: 1.6 version enhancement--></a>
-</div>
+[<-- Map](../3_collection_framework/map.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: 1.6 version enhancement -->](../3_collection_framework/1_6_version_enhancement.md)
 
 
 <br>

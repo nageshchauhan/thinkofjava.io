@@ -212,17 +212,8 @@ U, P, S, F, O,
 ```
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../4_collections_class/collections_class.md" style=""><-- Collections class</a>
-</div>
-
-
-
-<div style="float:right">
-  <a href="../6_concurrent_collection/need_of_concurrent_collection.md" style="">Next: Need of concurrent collection --></a>
-</div>
-
+[<-- Collections class](../4_collections_class/collections_class.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Need of concurrent collection -->](../6_concurrent_collection/need_of_concurrent_collection.md)
 
 <br>

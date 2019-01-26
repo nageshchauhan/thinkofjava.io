@@ -210,15 +210,8 @@ main method iterating and current value is : B
 If we replace `ConcurrentHashMap` with `HashMap`, then it is sure that we will get `ConcurrentModificationException`.
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../6_concurrent_collection/need_of_concurrent_collection.md" style=""><-- Need of concurrent collection</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../6_concurrent_collection/dif_hashmap_and_concurrent_hashmap.md" style="">Next: Difference in HashMap and ConcurrentHashMap --></a>
-</div>
+[<-- Need of concurrent collection](../6_concurrent_collection/need_of_concurrent_collection.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Difference in HashMap and ConcurrentHashMap -->](../6_concurrent_collection/dif_hashmap_and_concurrent_hashmap.md)
 
 <br>

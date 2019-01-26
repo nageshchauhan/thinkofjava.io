@@ -566,15 +566,9 @@ PASSWORD=password
 ```
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/comparable_and_comparator.md" style=""><-- Comparable and Comparator</a>
-</div>
+[<-- Comparable and Comparator](../3_collection_framework/comparable_and_comparator.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: 1.5 version enhancement -->](../3_collection_framework/1_5_version_enhancement.md)
 
-
-<div style="float:right">
-  <a href="../3_collection_framework/1_5_version_enhancement.md" style="">Next: 1.5 version enhancement --></a>
-</div>
 
 <br>

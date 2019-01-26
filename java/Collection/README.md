@@ -14,7 +14,7 @@
     - [1.5 version enhancement](3_collection_framework/1_5_version_enhancement.md)
     - [1.6 version enhancement](3_collection_framework/1_6_version_enhancement.md)
 4. [Collections class](4_collections_class/collections_class.md)
-5. [Arrays class] (5_arrays_class/arrays_class.md)
+5. [Arrays class](5_arrays_class/arrays_class.md)
 6. Concurrent collection
     - [Need of concurrent collection](6_concurrent_collection/need_of_concurrent_collection.md)
     - [ConcurrentMap interface and its implementation classes](6_concurrent_collection/concurrentMap.md)

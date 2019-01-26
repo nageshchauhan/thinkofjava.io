@@ -77,16 +77,9 @@ The important concurrent classes are : <br>
 3. `CopyOnWriteArraySet` <br>
 
 
-<br>
 
-<div style="float:left">
-  <a href="../5_arrays_class/arrays_class.md" style=""><-- Arrays class</a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../6_concurrent_collection/concurrentMap.md" style="">Next: ConcurrentMap interface and its implementation classes --></a>
-</div>
-
+[<-- Arrays class](../5_arrays_class/arrays_class.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: ConcurrentMap interface and its implementation classes -->](../6_concurrent_collection/concurrentMap.md)
 
 <br>

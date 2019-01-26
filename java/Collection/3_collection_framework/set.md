@@ -296,15 +296,9 @@ output
 [A, K, Z]
 ```
 
-<br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/list.md" style=""><-- List</a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../3_collection_framework/cursor.md" style="">Next: Cursors--></a>
-</div>
+[<-- List](../3_collection_framework/list.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Cursors -->](../3_collection_framework/cursor.md)
 
 <br>

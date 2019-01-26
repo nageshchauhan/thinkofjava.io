@@ -22,17 +22,8 @@ If we want to represent a group of individual object as a single entity then we 
 **Note:** There is no concrete class which implements collection interface directly.
 
 
-<br>
+<Br>
 
-
-<div style="float:left">
-  <a href="../2_key_interface/README.md" style=""><-- Important interface in Collection framework</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../3_collection_framework/list.md" style="">Next: List--></a>
-</div>
-
+[<-- Important interface in Collection framework](../2_key_interface/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: List -->](../3_collection_framework/list.md)
 
 <br>

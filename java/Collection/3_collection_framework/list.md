@@ -318,17 +318,9 @@ Output:
 -1
 ```
 
-<br>
 
+<Br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/collection.md" style=""><-- Collection</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../3_collection_framework/set.md" style="">Next: Set --></a>
-</div>
-
+[<-- Collection](../3_collection_framework/collection.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Set -->](../3_collection_framework/set.md)
 
 <br>

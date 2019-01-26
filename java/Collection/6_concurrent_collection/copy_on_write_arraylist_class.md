@@ -296,15 +296,9 @@ In the above program if we replace `CopyOnWriteArrayList` with `ArrayList` then 
 6. Introduced in 1.0 version.
 
 
-<br>
 
-<div style="float:left">
-  <a href="../6_concurrent_collection/dif_concurrentmap_synchronizedmap_hashtable.md" style=""><-- Difference in ConcurrentHashMap, synchronizedMap, and Hashtable</a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../6_concurrent_collection/copy_on_write_arrayset_class.md" style="">Next: CopyOnWriteArraySet --></a>
-</div>
+[<-- Difference in ConcurrentHashMap, synchronizedMap, and Hashtable](../6_concurrent_collection/dif_concurrentmap_synchronizedmap_hashtable.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: CopyOnWriteArraySet class -->](../6_concurrent_collection/copy_on_write_arrayset_class.md)
 
 <br>

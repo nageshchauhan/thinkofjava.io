@@ -31,15 +31,9 @@
 7. Introduced in 1.0 version.
 
 
-<br>
 
-<div style="float:left">
-  <a href="../6_concurrent_collection/dif_hashmap_and_concurrent_hashmap.md" style=""><-- Difference in HashMap and ConcurrentHashMap</a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../6_concurrent_collection/copy_on_write_arraylist_class.md" style="">Next: CopyOnWriteArrayList class --></a>
-</div>
+[<-- Difference in HashMap and ConcurrentHashMap](../6_concurrent_collection/dif_hashmap_and_concurrent_hashmap.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: CopyOnWriteArrayList class -->](../6_concurrent_collection/copy_on_write_arraylist_class.md)
 
 <br>

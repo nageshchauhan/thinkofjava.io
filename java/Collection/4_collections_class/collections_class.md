@@ -235,15 +235,8 @@ if c is meant for ascending order then c1 will result in descending order.
 
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/1_6_version_enhancement.md" style=""><-- 1.6 version enhancement</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../5_arrays_class/arrays_class.md" style="">Next: Arrays class --></a>
-</div>
+[<-- 1.6 version enhancement](../3_collection_framework/1_6_version_enhancement.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Arrays class -->](../5_arrays_class/arrays_class.md)
 
 <br>

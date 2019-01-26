@@ -138,16 +138,8 @@ t : {b=banana, c=cat, d=dog}
 ```
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/1_5_version_enhancement.md" style=""><-- 1.5 version enhancement</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../4_collections_class/collections_class.md" style="">Next: Collections class --></a>
-</div>
-
+[<-- 1.5 version enhancement](../3_collection_framework/1_5_version_enhancement.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Collections class -->](../4_collections_class/collections_class.md)
 
 <br>

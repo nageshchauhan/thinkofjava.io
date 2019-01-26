@@ -278,16 +278,8 @@ Comparison table for cursors:
 </table>
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/set.md" style=""><-- Set</a>
-</div>
-
-
-
-<div style="float:right">
-  <a href="../3_collection_framework/comparable_and_comparator.md" style="">Next: Comparable and Comparator --></a>
-</div>
+[<-- Set](../3_collection_framework/set.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Comparable and Comparator -->](../3_collection_framework/comparable_and_comparator.md)
 
 <br>

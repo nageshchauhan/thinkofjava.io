@@ -347,16 +347,10 @@ Output:
 4. No pre-defined class implements Comparator (Except `Collator` and `RuleBasedCollator` classes).
 
 
-<br>
 
-<div style="float:left">
-  <a href="../3_collection_framework/cursor.md" style=""><-- Cursors</a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../3_collection_framework/map.md" style="">Next: Map--></a>
-</div>
+[<-- Cursors](../3_collection_framework/cursor.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Map -->](../3_collection_framework/map.md)
 
 
 <br>

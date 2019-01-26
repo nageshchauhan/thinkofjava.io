@@ -77,10 +77,8 @@ Output:
 5. Introduced in version 1.2
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../6_concurrent_collection/copy_on_write_arraylist_class.md" style=""><-- CopyOnWriteArrayList class</a>
+[<-- CopyOnWriteArrayList class](../6_concurrent_collection/copy_on_write_arraylist_class.md) 
 
-  
 <br>

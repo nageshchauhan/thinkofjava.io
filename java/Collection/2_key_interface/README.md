@@ -82,15 +82,9 @@ The following are legacy entity present in Collection framework from version 1.0
 6) Properties (Class) <br>
 
 
-<br>
+<Br>
 
-<div style="float:left;">
-<a href="../1_Introduction/README.md"><-- Introduction </a>
-</div>
-
-
-<div style="float:right">
-  <a href="../3_collection_framework/collection.md" style="">Next: Collection --></a>
-</div>
+[<-- Introduction](../1_Introduction/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Collection -->](../3_collection_framework/collection.md)
 
 <br>
+

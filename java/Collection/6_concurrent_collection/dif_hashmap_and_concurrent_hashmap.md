@@ -20,15 +20,9 @@
 6. Introduced in 1.5 version.
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../6_concurrent_collection/concurrentMap.md" style=""><-- ConcurrentMap interface and its implementation classes</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../6_concurrent_collection/dif_concurrentmap_synchronizedmap_hashtable.md" style="">Next: Difference in ConcurrentHashMap, synchronizedMap, and Hashtable --></a>
-</div>
+[<-- ConcurrentMap interface and its implementation classes](../6_concurrent_collection/concurrentMap.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Difference in ConcurrentHashMap, synchronizedMap, and Hashtable -->](../6_concurrent_collection/dif_concurrentmap_synchronizedmap_hashtable.md)
 
 <br>
+
