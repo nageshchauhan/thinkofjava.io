@@ -30,13 +30,9 @@ If a thread don’t want to perform any operation for a particular amount of tim
 
 [Click here to read in detail](Thread_sleep.md)
 
+
+<Br>
+
+[<-- Thread Priority](../5_ThreadPriority/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: yield() -->](../6_PreventThreadExecution/Thread_yield.md)
+
 <br>
-
-<div style="float:left">
-  <a href="../5_ThreadPriority/README.md" style=""> <-- Thread Priority </a>
-</div>
-
-
-<div style="float:right">
-  <a href="../6_PreventThreadExecution/Thread_yield.md" style=""> yield() --> </a>
-</div>

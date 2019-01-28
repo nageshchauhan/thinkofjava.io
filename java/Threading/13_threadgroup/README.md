@@ -201,15 +201,8 @@ main -- false
 **Note:** Output may vary from system to system. 
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../12_user_vs_daemon_thread/README.md" style=""> <-- User vs Daemon Thread</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../14_java_util_concurrent_package/README.md" style=""> Next: java.util.concurrent package --> </a>
-</div>
+[<-- User vs Daemon Thread](../12_user_vs_daemon_thread/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: java.util.concurrent package -->](../14_java_util_concurrent_package/README.md)
 
 <br>

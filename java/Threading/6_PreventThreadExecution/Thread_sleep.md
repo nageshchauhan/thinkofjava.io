@@ -36,14 +36,8 @@ In the above output, first line will be printed instantly, and the next line wil
 
 <img src="../../../assets/images/threading/thread_sleep.png" width="520" height="850"/>
 
+<Br>
 
-<div style="float:left">
-  <a href="../6_PreventThreadExecution/Thread_join.md" style=""><-- join() </a>
-</div>
-
-
-<div style="float:right">
-  <a href="../7_Interruption_of_thread/README.md" style="">Next: Interruption of Thread --> </a>
-</div>
+[<-- join()](../6_PreventThreadExecution/Thread_join.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Interruption of Thread -->](../7_Interruption_of_thread/README.md)
 
 <br>

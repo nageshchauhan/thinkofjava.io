@@ -28,15 +28,8 @@ We can define a thread by implmenting Runnable interface. Runnable interface pre
 [Read in detail](ImplementingRunnableInterface.md)
 
 
-<br>
+<Br>
 
-<div style="float:left;">
-<a href="../1_Introduction/README.md"><-- Introduction</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../2_WaysToCreateThread/ExtendingThreadClass.md" style="">Next: by extending Thread class --></a>
-</div>
+[<-- Introduction](../1_Introduction/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: by extending Thread class -->](../2_WaysToCreateThread/ExtendingThreadClass.md)
 
 <br>

@@ -96,15 +96,8 @@ class DemoClass{
 8. According to the Java language specification you can not use synchronized keyword with constructor. It is illegal and result in compilation error.
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../8_synchronization/README.md" style=""> <-- Synchronization </a>
-</div>
-
-
-<div style="float:right">
-  <a href="../10_Inter_thread_comm/README.md" style=""> Next: Inter Thread communication --> </a>
-</div>
+[<-- Synchronization](../8_synchronization/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Inter Thread communication -->](../10_Inter_thread_comm/README.md)
 
 <br>

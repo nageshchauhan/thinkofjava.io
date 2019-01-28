@@ -47,15 +47,8 @@ This line executed by Thread-0
 Main thread executed
 ```
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../4_ThreadName/README.md" style=""><-- Getting and Setting Thread name</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../6_PreventThreadExecution/README.md" style="">Next: Prevent Thread Execution --> </a>
-</div>
+[<-- Getting and Setting Thread name](../4_ThreadName/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Prevent Thread Execution -->](../6_PreventThreadExecution/README.md)
 
 <br>

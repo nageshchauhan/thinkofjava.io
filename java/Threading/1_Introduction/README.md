@@ -21,13 +21,10 @@ Executing several tasks simultneously is called multitasking. It is divided into
   
 
 
-<div style="float:left;">
-<a href="../README.md"><-- Back to Threading</a>
-</div>
+<Br>
 
+[<-- Back to Threading](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Ways to define thread -->](../2_WaysToCreateThread/README.md)
 
+<br>
 
-<div style="float:right">
-  <a href="../2_WaysToCreateThread/README.md" style="">Next: Ways to define thread --></a>
-</div>
 

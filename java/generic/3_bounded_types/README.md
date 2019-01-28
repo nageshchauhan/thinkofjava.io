@@ -105,13 +105,6 @@ class HashMap<K, V> { }
 
 <br>
 
-<div style="float:left">
-  <a href="../2_generic_classes/README.md" style=""><-- Generic classes</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../4_generic_and_wild_card/README.md" style="">Next: Generic methods and wild card character (?) --></a>
-</div>
+[<-- Generic classes](../2_generic_classes/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Generic methods and wild card character (?) -->](../4_generic_and_wild_card/README.md)
 
 <br>

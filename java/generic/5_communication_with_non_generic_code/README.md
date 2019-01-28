@@ -87,9 +87,6 @@ In the above example, at the compile time following activity happened <br>
 
 <br>
 
-<div style="float:left">
-  <a href="../4_generic_and_wild_card/README.md" style=""><-- Generic methods and wild card character (?)</a>
-</div>
-
+[<-- Generic methods and wild card character (?)](../4_generic_and_wild_card/README.md)
 
 <br>

@@ -79,15 +79,8 @@ Both threads are waiting for each other to acquire lock, this situation is calle
 **`synchronized` keyword is the only one reason for deadlock, hence while using synchronized keyword we have to take much care.**
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../10_Inter_thread_comm/README.md" style=""> <-- Inter Thread communication</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../12_user_vs_daemon_thread/README.md" style=""> Next: User vs Daemon Thread --> </a>
-</div>
+[<-- Inter Thread communication](../10_Inter_thread_comm/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: User vs Daemon Thread -->](../12_user_vs_daemon_thread/README.md)
 
 <br>

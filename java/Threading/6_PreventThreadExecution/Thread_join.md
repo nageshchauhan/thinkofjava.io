@@ -91,15 +91,9 @@ MyThread completes execution
 
 <img src="../../../assets/images/threading/thread_join.png" alt="Thread join hierarchy" height="800" width="500"/>
 
-<br>
 
-<div style="float:left">
-  <a href="../6_PreventThreadExecution/Thread_yield.md" style=""> <-- yield() </a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../6_PreventThreadExecution/Thread_sleep.md" style=""> Next: sleep() --> </a>
-</div>
+[<-- yield()](../6_PreventThreadExecution/Thread_yield.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: sleep() -->](../6_PreventThreadExecution/Thread_sleep.md)
 
 <br>

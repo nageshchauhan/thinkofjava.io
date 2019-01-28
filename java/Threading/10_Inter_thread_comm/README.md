@@ -85,15 +85,8 @@ synchronized(s2){
 }
 ```
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../9_class_level_vs_object_level_lock/README.md" style=""><-- Class level vs Object level lock</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../11_deadlock/README.md" style="">Next: Deadlock --> </a>
-</div>
+[<-- Class level vs Object level lock](../9_class_level_vs_object_level_lock/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Deadlock -->](../11_deadlock/README.md)
 
 <br>

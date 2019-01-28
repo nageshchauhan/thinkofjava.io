@@ -195,11 +195,8 @@ Child thread value: parentValue
 ```
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../15_thread_pool/README.md" style=""> <-- Thread Pool</a>
-</div>
-
+[<-- Thread Pool](../15_thread_pool/README.md) <br>
 
 <br>

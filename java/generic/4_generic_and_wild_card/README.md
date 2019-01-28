@@ -118,13 +118,6 @@ public <T extends Number & Thread> void m1(); // Invalid
 
 <br>
 
-<div style="float:left">
-  <a href="../3_bounded_types/README.md" style=""><-- Bounded types</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../5_communication_with_non_generic_code/README.md" style="">Next: Communication with non-generic code --></a>
-</div>
+[<-- Bounded types](../3_bounded_types/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Communication with non-generic code -->](../5_communication_with_non_generic_code/README.md)
 
 <br>

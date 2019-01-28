@@ -159,15 +159,9 @@ main method
 
 In this example, a Thread will be created and it will start the job mentioned in run method. start() method of MyThread class will be executed by main thread whereas run() method of MyThread class is called by child thread of main ie Thread-0
 
-<br>
 
-<div style="float:left">
-  <a href="../2_WaysToCreateThread/README.md" style=""> <-- Ways to define thread</a>
-</div>
+<Br>
 
-
-<div style="float:right">
-  <a href="../2_WaysToCreateThread/ImplementingRunnableInterface.md" style="">Next: by implementing Runnable Interface --></a>
-</div>
+[<-- Ways to define thread](../2_WaysToCreateThread/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: by implementing Runnable Interface -->](../2_WaysToCreateThread/ImplementingRunnableInterface.md)
 
 <br>

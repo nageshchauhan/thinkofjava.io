@@ -166,15 +166,8 @@ pool-1-thread-1 is resposible to calculate some of first 70 numbers
 - Introduced in java 1.5 version.
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../14_java_util_concurrent_package/README.md" style=""> <-- java.util.concurrent package</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../16_thread_local/README.md" style=""> Next: ThreadLocal --> </a>
-</div>
+[<-- java.util.concurrent package](../14_java_util_concurrent_package/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: ThreadLocal -->](../16_thread_local/README.md)
 
 <br>

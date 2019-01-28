@@ -45,15 +45,8 @@ If main thread got first chance then above output will get. If we comment `t.int
 Whenever we are calling `interrupt()` method, if the target thread is not in sleeping or waiting state then there is no impact immediately. interrupt call will wait until target thread entered into sleeping or waiting state. Once target thread entered into sleeping or waiting state, the interrupt call will impact the target thread.
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../6_PreventThreadExecution/Thread_sleep.md" style=""> <-- sleep() </a>
-</div>
-
-
-<div style="float:right">
-  <a href="../8_synchronization/README.md" style=""> Next: Synchronization --> </a>
-</div>
+[<-- sleep()](../6_PreventThreadExecution/Thread_sleep.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Synchronization -->](../8_synchronization/README.md)
 
 <br>

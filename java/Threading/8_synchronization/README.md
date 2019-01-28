@@ -153,15 +153,8 @@ class X{
 }
 ```
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../7_Interruption_of_thread/README.md" style=""> <-- Interruption of Thread </a>
-</div>
-
-
-<div style="float:right">
-  <a href="../9_class_level_vs_object_level_lock/README.md" style="">Next: Class level vs Object level lock --> </a>
-</div>
+[<-- Interruption of Thread](../7_Interruption_of_thread/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Class level vs Object level lock -->](../9_class_level_vs_object_level_lock/README.md)
 
 <br>

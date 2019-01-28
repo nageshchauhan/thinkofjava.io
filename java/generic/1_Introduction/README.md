@@ -104,17 +104,8 @@ ArrayList<int> l = new ArrayList<int>(); // Compile time error: unexpected type
                     //found: int, required: reference
 ```
 
+<br>
+
+[<-- Back to Generic](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Generic classes -->](../2_generic_classes/README.md)
 
 <br> 
-
-<div style="float:left;">
-<a href="../README.md"><-- Back to Generic</a>
-</div>
-
-
-
-<div style="float:right">
-  <a href="../2_generic_classes/README.md" style="">Next: Generic classes --></a>
-</div>
-
-<br>

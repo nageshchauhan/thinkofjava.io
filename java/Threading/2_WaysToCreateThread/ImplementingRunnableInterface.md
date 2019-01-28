@@ -76,15 +76,8 @@ In the first approach, our class always extends Thread class, hence there is no 
 8. Thread t = new Thread(ThreadGroup g, Runnable r, String name, long stackSize);
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../2_WaysToCreateThread/ExtendingThreadClass.md" style=""> <-- by extending Thread class</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../3_ThreadLifecycle/README.md" style=""> Next: Thread Lifecylce --> </a>
-</div>
+[<-- by extending Thread class](../2_WaysToCreateThread/ExtendingThreadClass.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Thread Lifecylce -->](../3_ThreadLifecycle/README.md)
 
 <br>

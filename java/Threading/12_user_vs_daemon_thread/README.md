@@ -57,15 +57,8 @@ public class Introduction{
 In the above example, the main thread is non-daemon and child thread is daemon. Hence whenever main thread terminates, child thread will also be terminated by JVM.
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../11_deadlock/README.md" style=""><-- Deadlock</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../13_threadgroup/README.md" style="">Next: ThreadGroup --> </a>
-</div>
+[<-- Deadlock](../11_deadlock/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: ThreadGroup -->](../13_threadgroup/README.md)
 
 <br>

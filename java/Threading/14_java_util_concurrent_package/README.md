@@ -284,16 +284,8 @@ SecondThread released lock
 ```
 
 
-<br>
+<Br>
 
-<div style="float:left">
-  <a href="../13_threadgroup/README.md" style=""><-- ThreadGroup</a>
-</div>
-
-
-<div style="float:right">
-  <a href="../15_thread_pool/README.md" style="">Next: Thread Pool --> </a>
-</div>
-
+[<-- ThreadGroup](../13_threadgroup/README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Thread Pool -->](../15_thread_pool/README.md)
 
 <br>
