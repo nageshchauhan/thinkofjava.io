@@ -66,14 +66,14 @@ Among the two ways of defining thread, implements Runnable interface mechanism i
 In the first approach, our class always extends Thread class, hence there is no chance of extending any other class. But in the second approach, we can extends other class 
 
 # Constructors present in Thread class
-1. Thread t = new Thread();
-2. Thread t = new Thread(Runnable r);
-3. Thread t = new Thread(String name);
-4. Thread t = new Thread(Runnable r, String name);
-5. Thread t = new Thread(ThreadGroup g, String name);
-6. Thread t = new Thread(ThreadGroup g, Runnable r);
-7. Thread t = new Thread(ThreadGroup g, Runnable r, String name);
-8. Thread t = new Thread(ThreadGroup g, Runnable r, String name, long stackSize);
+1. `Thread t = new Thread();`
+2. `Thread t = new Thread(Runnable r);`
+3. `Thread t = new Thread(String name);`
+4. `Thread t = new Thread(Runnable r, String name);`
+5. `Thread t = new Thread(ThreadGroup g, String name);`
+6. `Thread t = new Thread(ThreadGroup g, Runnable r);`
+7. `Thread t = new Thread(ThreadGroup g, Runnable r, String name);`
+8. `Thread t = new Thread(ThreadGroup g, Runnable r, String name, long stackSize);`
 
 
 <Br>

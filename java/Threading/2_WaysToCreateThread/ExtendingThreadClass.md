@@ -61,6 +61,7 @@ class Thread{
 
 ### If we are not overriding run() method
 If we are not overriding run() method, then Thread class run() method will be executed. run() method of Thread class has empty implementation, hence we won't get any output.
+
 ```java
 class MyThread extends Thread{
   public static void main(String []args){
@@ -77,6 +78,7 @@ Ouput will be:
 
 ### Overloading of run() method
 Overloading of run() is possible, but Thread class start() method will always call no argument run() only. The other run method needs to be called explicitly.
+
 ```java
 class MyThread extends Thread{
   public void run(){

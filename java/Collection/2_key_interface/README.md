@@ -6,7 +6,7 @@
 
 If we want to represent a group of individual object as a single entity then we should go for collection. Collection interface defines the most common methods which are applicable for any collection object. In general collection interface is considered as root interface of collection framework(In terms of functionality).
 
-There is no concrete class which implements collection interface directly.
+**There is no concrete class which implements collection interface directly.**
 
 #### Difference between Collection(I) and Collections(Class)
 

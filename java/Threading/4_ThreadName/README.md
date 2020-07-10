@@ -47,7 +47,7 @@ Output:
 main
 MyThread
 Exception in thread "MyThread" java.lang.ArithmeticException: / by zero
-	at MyThread.main(Introduction.java:6)
+	at MyThread.main(MyThread.java:6)
 ```
 
 As we can see in the output, after changing the name of main thread, I was intentionally carried out Arithmetic error to demonstrate the exception message.

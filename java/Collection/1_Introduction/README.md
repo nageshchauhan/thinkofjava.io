@@ -54,7 +54,7 @@ To overcome above problems of array, we should go for Collection.
 6) It can hold both primitive and objects.
 
 ### Collection:
-1) It is growable in nature ie based on requirement we can increase of decrease the size. <br>
+1) It is growable in nature ie based on requirement we can increase or decrease the size. <br>
 
 2) With respect to memory, it is recommended to use.
 
