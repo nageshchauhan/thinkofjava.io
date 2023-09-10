@@ -1,0 +1,86 @@
+#outerDiv{
+  display: flex;
+}
+#leftMenu{
+  border: 1px solid black;
+  width: 24%;
+  display: inline-block;
+  float:left;
+  min-width: 300px;
+}
+#rightContent{
+  border: 1px solid red;
+  display: inline-block;
+  width: 74%;
+  min-width: 800px;
+  float:right;
+  padding-left: 10px;
+}
+.menu{
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-image: linear-gradient(#00fffe1c, white);
+  border: 1px solid #a0e39b;
+  
+}
+.menu:hover{
+  background: #00fffe36;
+}
+.menu:active{
+  background-image: linear-gradient(#00fffe85, #e2dcdb);
+}
+.subMenu{
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+.subMenu:hover{
+/*  background-image: linear-gradient(grey, white);*/
+  background: #80808082;
+}
+.subMenu:active{
+  background: green;
+}
+.subMenuParent{
+  transition: height 1s linear;
+}
+.cursorPointer{
+  cursor: pointer;
+}
+body{
+/*  font-family: RobotoLight;*/
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+  margin: 2px;
+}
+.fontBold{
+  font-weight: bold;
+}
+.header1{
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: 1.5em;
+  margin: 0px 0px 10px 0px;
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.header2{
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: 1.25em;
+  margin: 15px 0px 15px 0px;
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid #eaecef;
+}
+.header3{
+  margin: 15px 0px 15px 0px;
+  font-weight: 550;
+  line-height: 1.25;
+  font-size: 1.1em;
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(../scripts/library/Roboto-Light.tff);
+}

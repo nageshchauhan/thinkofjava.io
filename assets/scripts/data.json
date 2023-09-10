@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1", 
+    "name" : "Language Fundamentals", 
+    "isVisible": false, 
+    "menuName":"1-language-fundamentals",
+    "subMenus" : [
+      {
+        "id" : "1_1", 
+        "name" : "Java Identifiers",
+        "link": "java-identifiers"
+      },
+      {
+        "id" : "1_2", 
+        "name": "Reserved Word",
+        "link": "reserved-words"
+      }
+    ]
+  },
+  {
+    "id" : "2", 
+    "name" : "Operators and Assignments", 
+    "isVisible": false,
+    "menuName":"2-operatots-assignments",
+    "subMenus" : [
+      {
+        "id" : "2_1", 
+        "name" : "Increment, decrement and arithmetic",
+        "link": "java-identifiers"
+      },
+      {
+        "id" : "2_2", 
+        "name": "Concatenation, relational and equality",
+        "link": "java-identifiers"
+      }
+    ]
+  },
+  {
+    "id" : "3", 
+    "name" : "Flow Control", 
+    "isVisible": false,
+    "menuName":"3-flow-controls",
+    "subMenus" : [
+      {
+        "id" : "3_1", 
+        "name" : "Introduction",
+        "link": "1-Introduction"
+      },
+      {
+        "id" : "3_2", 
+        "name": "Selection Statement: if-else",
+        "link": "2-if-else"
+      },
+      {
+        "id" : "3_3", 
+        "name": "Selection Statement: switch",
+        "link": "java-identifiers"
+      }
+    ]
+  }
+]
