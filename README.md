@@ -2,9 +2,16 @@
 
 The java concept which all java programmer must aware of.
 
-1. Java Interface
-2. [Java Modifiers](java/modifiers/README.md)
-2. [String, StringBuffer, StringBuilder](java/String/index.html)
-3. [Collection](java/Collection/README.md)
-4. [Generics](java/generic/README.md)
-5. [Threading](java/Threading/README.md)
+1. [Java Fundamentals](java/fundamentals/README.md)
+2. Operators and Assignments
+3. Flow control
+4. Declaration and access modifiers
+5. Interface and abstract class
+6. Object oriented programming
+7. Exception Handling
+8. [Multi Threading](java/Threading/README.md)
+9. Inner class
+10. [Java Modifiers](java/modifiers/README.md)
+11. [String, StringBuffer, StringBuilder](java/String/index.html)
+12. [Collection](java/Collection/README.md)
+13. [Generics](java/generic/README.md)
