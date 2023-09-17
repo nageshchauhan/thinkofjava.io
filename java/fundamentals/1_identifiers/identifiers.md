@@ -272,6 +272,6 @@ byte, short, Int //invalid
 ```
 
 <Br>
-[<-- Back to Fundamentals](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Datatypes -->](../2_key_interface/README.md)
+[<-- Back to Fundamentals](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Datatypes -->](../2_datatype/datatypes.md)
 
 <br>
