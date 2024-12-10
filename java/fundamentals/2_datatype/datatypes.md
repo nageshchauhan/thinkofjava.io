@@ -1,4 +1,4 @@
-[Back to Language Fundamentals](../README.md)
+[Home](../../../README.md) > [Language Fundamentals](../README.md)
 
 # Data Types
 
@@ -13,19 +13,19 @@ Java is not considered as pure object oriented programming language because seve
 
 ### Primitive Data types (8 types)
 
-#### Non Numeric data type (2 types)
-- char
-- boolean
+- Non Numeric data type (2 types)
+  - char
+  - boolean
 
-#### Numeric data types (6 types)
-- Integral data types
-    - byte
-    - short
-    - int
-    - long 
-- Floating point data types
-    - float 
-    - double
+- Numeric data types (6 types)
+  - Integral data types
+      - byte
+      - short
+      - int
+      - long 
+  - Floating point data types
+      - float 
+      - double
 
 Except boolean and char, remaining data types are considered as signed data types because we can represent both positive and negative numbers.
 
@@ -237,7 +237,8 @@ Range: 0 to 65536
 char ch = null; //CE: incompatible types, found: <null type>, required: char
 ```
 
-<Br>
+<br>
+
 [<-- Back: Identifier and reserved words](../1_identifiers/identifiers.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Literals -->](../3_literals/literals.md)
 
 <br>

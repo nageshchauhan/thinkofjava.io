@@ -1,8 +1,8 @@
-# Welcome to thinkofjava.io
+[Home](../../README.md)
 
 ## Java Language Fundamentals
 
-1. [Identifiers and reserved words](1_identifiers/identifiers.md)
+1. [Identifiers and Reserved words](1_identifiers/identifiers.md)
 2. [Data Types](2_datatype/datatypes.md)
 3. [Literals](3_literals/literals.md)
 4. [Arrays]()

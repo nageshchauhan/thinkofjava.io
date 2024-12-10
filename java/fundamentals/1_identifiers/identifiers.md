@@ -1,4 +1,4 @@
-[Back to Language Fundamentals](../README.md)
+[Home](../../../README.md) > [Language Fundamentals](../README.md)
 
 # Java Identifiers and Reserved words
 
@@ -20,11 +20,11 @@ class Test {
 
 In this example, there are 5 identifiers
 
-- Test - class name
-- main - method name
-- String - Pre-defined class name
-- args - variable name of type String
-- x - variable name of type int
+- `Test` - class name
+- `main` - method name
+- `String` - Pre-defined class name
+- `args` - variable name of type String
+- `x` - variable name of type int
 
 
 ### Rules for defining Java identifiers
@@ -239,8 +239,8 @@ enum Months {
 ### Conclusion:
 
 - All 53 reserved words in Java contains only lower case alphabet.
-- We have only `new` keyword and there is no `delete` keyword, because destruction of useless object is the responsibility of Garbage collector.
-- Following are are new keywords in Java
+- We have only `new` keyword and there is no `delete` keyword, because destruction of useless object is the responsibility of garbage collector.
+- Following are new keywords in Java
     
     ```java
     strictfp // 1.2 version onwards
@@ -271,7 +271,8 @@ instaceOf, strictFp //invalid
 byte, short, Int //invalid
 ```
 
-<Br>
-[<-- Back to Fundamentals](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Datatypes -->](../2_datatype/datatypes.md)
+<br>
+
+[<-- Back to Language Fundamentals](../README.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Data Types -->](../2_datatype/datatypes.md)
 
 <br>

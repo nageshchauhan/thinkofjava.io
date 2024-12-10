@@ -1,4 +1,4 @@
-[Back to Language Fundamentals](../README.md)
+[Home](../../../README.md) > [Language Fundamentals](../README.md)
 
 # Literals
 
@@ -38,7 +38,7 @@ For integral datatypes (byte, short, int, long) we can specify literal value in 
     
     These are only possible ways to specify literal value for integral data type.
     
-Q. Which of the following declarations are valid
+Question: Which of the following declarations are valid
 
 ```java
 int x = 10; //valid
@@ -79,7 +79,7 @@ byte b = 128; // CE: possible loss of precision, found: int, required: byte
 
 ## Floating point literals
 
-By default, every floating point literal is of double type and hence we can't assign directly to float variable. But we can specify floating point literal as float type byt suffixed with `f` or `F`
+By default, every floating point literal is of double type and hence we can't assign directly to float variable. But we can specify floating point literal as float type by suffixed with `f` or `F`
 
 ```java
 float f = 123.456; //CE: Possible loss of precision, fount: double, required: float
@@ -110,7 +110,7 @@ double d = 0x123.456; //CE: Malformed floating point literal
 We can assign integral literal directly to floating point variables and that integral literal can be specifies either in decimal, octal or hexa decimal forms.
 
 ```java
-double d = 0777; /valid
+double d = 0777; //valid
 
 double d = 0786; //CE: integer number too large
 
@@ -308,7 +308,8 @@ Any sequence of character within double quote is treated as string literal.
 
 `float f = 10L; //valid`
 
-<Br>
-[<-- Back: Datatype](../2_datatype/datatypes.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Arrays -->](../4_arrays/README.md)
+<br>
+
+[<-- Back: Datatype](../2_datatype/datatypes.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Arrays -->](../4_arrays/arrays.md)
 
 <br>
