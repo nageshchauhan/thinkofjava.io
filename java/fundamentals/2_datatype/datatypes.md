@@ -40,7 +40,7 @@ MIN_VALUE: -128
 
 Range: -128 to +127
 
-<img src="datatype.png"/>
+<img alt="Datatype" src="datatype.png"/>
 
 The most significant bit act as signed bit. 0 indicate positive number an 1 indicate negative number.
 
@@ -78,7 +78,7 @@ short s = 32767; //valid
 short s = 32768; //CE: Possible loss of precision, found: int, required: short
 ```
 
-short datatype best suitable for 16 bit processor like 8085 but these processor are completely outdated and hence corresponding short datatype is also outdated datatype.
+short datatype is the best suitable for 16-bit processor like 8085 but these processor are completely outdated and hence corresponding short datatype is also outdated datatype.
 
 ## int
 
@@ -156,7 +156,7 @@ boolean b = "true"; //CE: incompatible types, found: java.lang.String, required:
 
 Old languages (like c/c++) are ASCII code based and number of allowed ASCII code characters are less than or equal to 256. To represent these 356 characters, 8 bits(1 byte) is enough hence the size of char in old language is 1 byte.
 
-But Java is unicode based and the number of different unicode characters are greater than 256 and less than or equal to 65536. To represent these many characters, 8 bits may not enough. So we should go for 16 bits. Hence the size of char in java is 2 bytes.
+But Java is Unicode based and the number of different Unicode characters are greater than 256 and less than or equal to 65536. To represent these many characters, 8 bits may not enough. So we should go for 16 bits, Hence the size of char in java is 2 bytes.
 
 Size: 2 bytes (16 bits)
 
@@ -230,7 +230,7 @@ Range: 0 to 65536
   </tr>
 </table>
 
-<strong>Note:</strong> `null` is default value for object reference and we can't apply for primitive. If we try to use for primitive we'll get compile time error.
+<strong>Note:</strong> `null` is default value for object reference, and we can't apply for primitive. If we try to use for primitive we'll get compile time error.
 
 ```java
 //Example
