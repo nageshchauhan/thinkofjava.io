@@ -1,6 +1,6 @@
 # Welcome to thinkofjava.io
 
-The java concept which all java programmer must aware of.
+The java concept which all java programmer must be aware of.
 
 1. [Java Fundamentals](java/fundamentals/README.md)
 2. Operators and Assignments
