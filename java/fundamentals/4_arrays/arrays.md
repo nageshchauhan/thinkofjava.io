@@ -5,8 +5,8 @@
 1. [Introduction](#introduction)
 2. [Array declaration](#array-declaration)
 3. [Array creation](#array-creation)
-4. [Array initilization](#array-initialization)
-5. [Array declration, creation & initialization](#array-declaration-creation-and-initialization)
+4. [Array initialization](#array-initialization)
+5. [Array declaration, creation & initialization](#array-declaration-creation-and-initialization)
 6. [length vs length()](#length-vs-length)
 7. [Anonymous arrays](#anonymous-arrays)
 8. [Array element assignments](#array-element-assignments)
@@ -19,9 +19,9 @@ An Array is an indexed collection of fixed number of homogeneous data elements.
 
 The main advantage is, we can represent huge number of values by using single variable so that readability of code will be improved.
 
-But the main disadvante of Arrays, fixed in size, ie once we creates an array, there is no way of increasing or decreasing the size ased on requirement.
+But the main disadvantage of Arrays, fixed in size, ie once we create an array, there is no way of increasing or decreasing the size based on requirement.
 
-Hence to use array, we should compulsary know the size in advanced, which may not possible always.
+Hence to use array, we should compulsory know the size in advanced, which may not possible always.
 
 ## Array declaration
 
@@ -255,7 +255,7 @@ x[2.5] = 90; //CE: Possible loss of precision, found: double, required: int
 
 **Note:** If we are trying to access array element with out of range index (either positive or negative int value) then Runtime exception with ArrayIndexOutOfBoundsException will be raised.
 
-## Array declaration, creation and initialization 
+## Array declaration, creation and initialization
 
 We can declare, create and initialize an array in a single live (shortcut representation)
 
