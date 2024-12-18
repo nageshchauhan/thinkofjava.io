@@ -60,7 +60,7 @@ byte b = true; //CE: Incompatible types, found: boolean, required: byte
 byte b = "test"; //CE: Incompatible types, found: java.lang.String, required: byte
 ```
 
-byte is best choice, if we want to handle data in terms of streams, either from the file or from network (file or network supported form is byte)
+byte is the best choice, if we want to handle data in terms of streams, either from the file or from network (file or network supported form is byte)
 
 
 ## short 
