@@ -8,12 +8,12 @@ Every assignment should be checked by compiler for type compatibility.
 
 Because of the above reason, we can conclude Java language is strongly typed programming language.
 
-Java is not considered as pure object oriented programming language because several OOPS feature are not satisfied by Java (like operator overloading, multiple inheritance etc). Moreover, we are depending on primitive datatypes which are non objects.
+Java is not considered as pure object-oriented programming language because several OOPS feature are not satisfied by Java (like operator overloading, multiple inheritance etc.). Moreover, we depend on primitive datatypes which are non objects.
 
 
 ### Primitive Data types (8 types)
 
-- Non Numeric data type (2 types)
+- Non-Numeric data type (2 types)
   - char
   - boolean
 
