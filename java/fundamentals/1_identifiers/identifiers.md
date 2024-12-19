@@ -200,7 +200,7 @@ this
 ```
 
 ### void return type keyword(1)
-In Java, return type is mandatory. If a method won't return anything then we have to declare that method with void return type.
+In Java, return type is mandatory. If a method doesn't return anything then we have to declare that method with void return type.
 
 But in C language, return type is optional and default return type is int.
 
