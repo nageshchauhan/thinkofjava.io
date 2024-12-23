@@ -250,6 +250,7 @@ enum Months {
     assert // 1.4 version onwards
     enum // 1.5 version onwards
     ```
+
 - `strictfp` but not `strictFp`
 - `instanceof` but not `instanceOf`
 - `synchronized` but not `synchronize`
