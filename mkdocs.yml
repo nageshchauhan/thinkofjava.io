@@ -1,1 +1,49 @@
 site_name: thinkofjava.io
+site_author: Nagesh Chauhan
+site_url: https://nageshchauhan.github.io/thinkofjava.io/
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.annotation
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Java Fundamentals:
+    - Overview: fundamentals/README.md
+    - Identifiers and Reserved words: fundamentals/1_identifiers/identifiers.md
+    - Data Types: fundamentals/2_datatype/datatypes.md
+    - Literals: fundamentals/3_literals/literals.md
+    - Arrays: fundamentals/4_arrays/arrays.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>
