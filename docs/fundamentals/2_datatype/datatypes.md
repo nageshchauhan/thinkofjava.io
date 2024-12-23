@@ -1,5 +1,3 @@
-[Home](../../../README.md) > [Language Fundamentals](../README.md)
-
 # Data Types
 
 In Java, every variable expression has some type. Each and every data type is clearly defined.
