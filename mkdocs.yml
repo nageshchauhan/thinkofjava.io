@@ -31,6 +31,8 @@ nav:
     - Data Types: fundamentals/2_datatype/datatypes.md
     - Literals: fundamentals/3_literals/literals.md
     - Arrays: fundamentals/4_arrays/arrays.md
+  - Operators and Assignments:
+      - Overview: fundamentals/README.md
 
 markdown_extensions:
   - pymdownx.highlight:
