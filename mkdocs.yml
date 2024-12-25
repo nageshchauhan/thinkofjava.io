@@ -1,11 +1,14 @@
 site_name: thinkofjava.io
 site_author: Nagesh Chauhan
 site_url: https://nageshchauhan.github.io/thinkofjava.io/
+#repo_url: https://github.com/nageshchauhan/thinkofjava.io/
+#repo_name: nageshchauhan/thinkofjava.io
 theme:
   name: material
   features:
     - content.code.copy
     - content.code.annotation
+    - navigation.indexes
   palette:
     - scheme: default
       toggle:
@@ -31,8 +34,8 @@ nav:
     - Data Types: fundamentals/2_datatype/datatypes.md
     - Literals: fundamentals/3_literals/literals.md
     - Arrays: fundamentals/4_arrays/arrays.md
-  - Operators and Assignments:
-      - Overview: fundamentals/README.md
+  #- Operators and Assignments:
+      #- Overview: fundamentals/README.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -48,4 +51,4 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>
+  Copyright &copy; 2024 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>

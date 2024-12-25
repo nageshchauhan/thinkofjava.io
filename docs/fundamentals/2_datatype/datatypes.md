@@ -9,65 +9,74 @@ Because of the above reason, we can conclude Java language is strongly typed pro
 Java is not considered as pure object-oriented programming language because several OOPS feature are not satisfied by Java (like operator overloading, multiple inheritance etc.). Moreover, we depend on primitive datatypes which are non objects.
 
 
-### Primitive Data types (8 types)
+## Primitive Data types (8 types)
 
 - Non-Numeric data type (2 types)
-  - char
-  - boolean
+    * char
+    * boolean
 
 - Numeric data types (6 types)
-  - Integral data types
-      - byte
-      - short
-      - int
-      - long 
-  - Floating point data types
-      - float 
-      - double
+    - Integral data types
+        - byte
+        - short
+        - int
+        - long 
+    - Floating point data types
+        - float 
+        - double
 
 Except boolean and char, remaining data types are considered as signed data types because we can represent both positive and negative numbers.
 
 
-## byte
+### byte
 
-Size: 1 byte (8 bits)
+**Size**: 1 byte (8 bits)
 
-MAX_VALUE: +127
+**MAX_VALUE**: 127
 
-MIN_VALUE: -128
+**MIN_VALUE**: -128
 
-Range: -128 to +127
+**Range**: -128 to 127
 
-<img alt="Datatype" src="datatype.png"/>
+![](datatype.png)
 
-The most significant bit act as signed bit. 0 indicate positive number an 1 indicate negative number.
+The most significant bit act as signed bit. 0 indicate positive number and 1 indicate negative number.
 
 Positive number will be represented directly in memory, whereas negative number will be represented in two's compliment form.
 
-```java
-//Example:
+```java linenums="1"
+//Examples:
 
 byte b = 10; //valid
 byte b = 127; //valid
-byte b = 128; //CE: Possible loss of precision, found: int, required: byte
 
-byte b = 10.5; //CE: Possible loss of precision, found: double, required: byte
+byte b = 128; 
+//Compile time Exception: Possible loss of precision 
+//found: int, required: byte
 
-byte b = true; //CE: Incompatible types, found: boolean, required: byte
+byte b = 10.5; 
+//Compile time Exception: Possible loss of precision 
+//found: double, required: byte
 
-byte b = "test"; //CE: Incompatible types, found: java.lang.String, required: byte
+byte b = true; 
+//Compile time Exception: Incompatible types
+//found: boolean, required: byte
+
+byte b = "test"; 
+//Compile time Exception: Incompatible types
+//found: java.lang.String, required: byte
 ```
 
-byte is the best choice, if we want to handle data in terms of streams, either from the file or from network (file or network supported form is byte)
+byte is the best choice, if we want to handle data in terms of streams, either from the file or from network (file or network supported form is byte).
 
 
-## short 
+### short 
 
-This is most rarely used datatype in Java.
+This is rarely used datatype in Java.
 
-Size: 2 bytes (16 bits)
+**Size**: 2 bytes (16 bits)
 
-Range: -2<sup>15</sup> to 2<sup>15</sup> -1 [-32768 to 32767]
+**Range**: -2<sup>15</sup> to 2<sup>15</sup> -1 [-32768 to 32767]
 
 ```java
 //Example:
@@ -78,87 +87,86 @@ short s = 32768; //CE: Possible loss of precision, found: int, required: short
 
 short datatype is the best suitable for 16-bit processor like 8085 but these processor are completely outdated and hence corresponding short datatype is also outdated datatype.
 
-## int
+### int
 
-The most commonly used datatype in Java is int.
+This is most commonly used datatype in Java.
 
-Size: 4 bytes (32 bits)
+**Size**: 4 bytes (32 bits)
 
-Range: -2<sup>31</sup> to 2<sup>31</sup> - 1  [-2147483648 to 2147483647]
+**Range**: -2<sup>31</sup> to 2<sup>31</sup> - 1  [-2147483648 to 2147483647]
 
-```java
-//Example:
+```java linenums="1"
+//Example: 
 
 int x = 2147483647; //valid
 int x = 2147483648; //CE: integer number too large
 
-int x = 2147483648L; //CE: Possible loss of precision, found: long, required: int
+int x = 2147483648L; 
+//CE: Possible loss of precision, found: long, required: int
 
 int x = true; //CE: incompatible datatype, found: boolean, required: int
 ```
 
-## long
+### long
+Sometimes int may not enough to hold large value then we can use long datatype.
 
-Sometimes int may not enough to hold large value then we should go for long datatype.
+**Size**: 8 bytes (64 bits)
 
-Size: 8 bytes (64 bits)
-
-Range: -2<sup>63</sup> to 2<sup>63</sup> - 1
+**Range**: -2<sup>63</sup> to 2<sup>63</sup> - 1
 
 eg.
  
-- The amount of distance travelled by light in 100days, to hold this value, int may not enough.
+The amount of distance travelled by light in 100days, to hold this value, `int` may not enough.
 
 `long l = 126000000000;`
 
-- The number of character present in a big file may exceed int range, hence the return type of length method is long but not int.
+The number of character present in a big file may exceed int range, hence the return type of length method is long but not int.
 
 `long l = file.length();`
 
-Note: All above datatypes (byte, short, int, long) meant for representing integral values. If we want to represent floating point values then we should use floating point datatype.
+**Note**: All above datatypes (byte, short, int, long) meant for representing integral values. If we want to represent floating point values then we should use floating point datatype.
 
-## float
+### float
+If we want 5 to 6 decimal place of accuracy then we should use `float`. It follows single precision.
 
-If we want 5 to 6 decimal place of accuracy then we should use float. float follows single precision
+**Size**: 4 bytes (32 bits)
 
-Size: 4 bytes (32 bits)
+**Range**: -3.4e<sup>38</sup> to 3.4e<sup>38</sup>
 
-Range: -3.4e<sup>38</sup> to 3.4e<sup>38</sup>
+### double
+If we want 14 to 15 decimal place of accuracy then we should use `double` datatype. It follows double precision
 
-## double
+**Size**: 8 bytes (64 bits)
 
-If we want 14 to 15 decimal place of accuracy then we should use double datatype. double follows double precision
-
-Size: 8 bytes (64 bits)
-
-Range: -1.7e<sup>308</sup> to 1.7e<sup>308</sup>
+**Range**: -1.7e<sup>308</sup> to 1.7e<sup>308</sup>
 
 
-## boolean
+### boolean
 
-Size: Not applicable [virtual machine dependent]
+**Size**: Not applicable [virtual machine dependent]
 
-Range: Not applicable [but allowed values are true and false]
+**Range**: Not applicable [but allowed values are true and false]
 
-```java
+```java linenums="1"
 boolean b = true; //valid
 boolean b = 0; // CE: incompatible types, found: int, required: boolean
 
-boolean b = True; //CE: cannot find symbol, symbol: variable True, location: class ClassName
+boolean b = True; 
+//CE: cannot find symbol, symbol: variable True, location: class ClassName
 
-boolean b = "true"; //CE: incompatible types, found: java.lang.String, required: boolean
-
+boolean b = "true"; 
+//CE: incompatible types, found: java.lang.String, required: boolean
 ```
 
-## char
+### char
 
-Old languages (like c/c++) are ASCII code based and number of allowed ASCII code characters are less than or equal to 256. To represent these 356 characters, 8 bits(1 byte) is enough hence the size of char in old language is 1 byte.
+Old languages (like c/c++) are ASCII based and number of allowed ASCII characters are less than or equal to 256. To represent these 256 characters, 8 bits(1 byte) is enough hence the size of char in old language is 1 byte.
 
-But Java is Unicode based and the number of different Unicode characters are greater than 256 and less than or equal to 65536. To represent these many characters, 8 bits may not enough. So we should go for 16 bits, Hence the size of char in java is 2 bytes.
+But Java is Unicode based and the number of different Unicode characters are greater than 256 and less than or equal to 65536. To represent these many characters, 8 bits may not enough. So it uses 16 bits, hence the size of `char` in Java is 2 bytes.
 
-Size: 2 bytes (16 bits)
+**Size**: 2 bytes (16 bits)
 
-Range: 0 to 65536
+**Range**: 0 to 65536
 
 ## Summary of Java primitive datatypes
 
@@ -234,9 +242,4 @@ Range: 0 to 65536
 //Example
 char ch = null; //CE: incompatible types, found: <null type>, required: char
 ```
-
-<br>
-
-[<-- Back: Identifier and reserved words](../1_identifiers/identifiers.md) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; [Next: Literals -->](../3_literals/literals.md)
-
 <br>
