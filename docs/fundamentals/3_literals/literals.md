@@ -11,7 +11,7 @@ int x = 10;
 
 ## Integral Literal
 
-For integral datatypes (byte, short, int, long) we can specify literal value in following ways:
+For integral datatypes (byte, short, int, long) we can specify literal value in the following ways:
 
 - Decimal form (base 10)
 
@@ -27,7 +27,8 @@ For integral datatypes (byte, short, int, long) we can specify literal value in 
 
 - Hexadecimal form (base 16)
 
-    Allowed digits are 0 to 9, a to f. For extra digit (a to f) we can use both lower and upper case character. This is one of very few areas where Java is not case-sensitive.
+    Allowed digits are 0 to 9, a to f. For the extra digit (a to f) we can use both lower and upper case character. 
+    This is one of very few areas where Java is not case-sensitive.
     
     The literal value should be prefixed with `0x` or `0X` [zero x]     
 
@@ -64,7 +65,8 @@ long l = 10; // valid
 ```
 
 There is no direct way to specify byte and short literal explicitly, but indirectly we can specify. 
-Whenever we are assigning integral literal to the byte variable and if the value within the range of byte then compiler treats it as byte literal, similarly short literals.
+Whenever we are assigning integral literal to the byte variable and if the value within the range of byte, 
+then the compiler treats it as byte literal, similarly short literals.
 
 ```java linenums="1"
 byte b = 10; //valid
@@ -76,7 +78,8 @@ byte b = 128; // CE: possible loss of precision, found: int, required: byte
 
 ## Floating point literals
 
-By default, every floating point literal is of double type and hence we can't assign directly to float variable. But we can specify floating point literal as float type by suffixed with `f` or `F`
+By default, every floating point literal is of double type and hence we can't assign directly to float variable.
+But we can specify floating point literal as a float type by suffixed with `f` or `F`
 ```java linenums="1"
 float f = 123.456; 
 //CE: Possible loss of precision, fount: double, required: float
@@ -171,7 +174,9 @@ char ch = 'ab'; //CE: unclosed char literal 'ab', not closed statement 'ab'
 ```
 <br>
 
-We can specify char literal as integral literal which represents Unicode value of character and that integral literal can be specified either in decimal, octal or hexadecimal forms but allowed range is 0 to 65535.
+We can specify char literal as integral literal which represents Unicode value of character,
+and that integral literal can be specified either in decimal, 
+octal or hexadecimal forms, but the allowed range is 0 to 65,535.
 ```java linenums="1"
 char ch = 0xFACE; //valid
 
@@ -198,47 +203,18 @@ char ch = '\t'; //valid
 char ch = '\m'; //CE: illegal escape character
 ```
 
-<table>
-<tr>
-  <th>Escape character</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>\n</td>
-  <td>New line</td>
-</tr>
-<tr>
-  <td>\t</td>
-  <td>Horizontal tab</td>
-</tr>
-<tr>
-  <td>\r</td>
-  <td>Carriage return</td>
-</tr>
-<tr>
-  <td>\b</td>
-  <td>Backspace</td>
-</tr>
-<tr>
-  <td>\f</td>
-  <td>Form feed</td>
-</tr>
-<tr>
-  <td>\'</td>
-  <td>Single quote</td>
-</tr>
-<tr>
-  <td>\"</td>
-  <td>Double quote</td>
-</tr>
-<tr>
-  <td>\\</td>
-  <td>Backslash</td>
-</tr>
-</table>
+| Escape character | Description     |
+|:-----------------|:----------------|
+| \n               | New line        |
+| \t               | Horizontal tab  |
+| \r               | Carriage return |
+| \b               | Backspace       |
+| \f               | Form feed       |
+| \'               | Single quote    |
+| \"               | Double quote    |
+| \\               | Backslash       |
 
-
-Question: Which of the following are valid ?
+Question: Which of the following are valid?
 
 ```java
 char ch = 65536; //invalid
@@ -288,7 +264,9 @@ Any sequence of character within double quote is treated as string literal.
     double d = 123_456.7_8_9;
     ```
     
-    The main advantage of this approach that readability of code will be improved. At the time of compilation, these underscore symbols will be removed automatically, hence after compilation the above example will become
+    The main advantage of this approach is that readability of code will be improved.
+    At the time of compilation, these underscore symbols will be removed automatically,
+    hence after compilation the above example will become
     
     `double d = 123456.789`
     

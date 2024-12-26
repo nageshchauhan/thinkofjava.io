@@ -2,9 +2,9 @@
 
 ## Java Identifiers
 
-A name in java program is called identifier which can be used for identification purpose.
+A name in java program is called identifier which can be used for identification.
 
-It can be method name, variable name, class name or label name.
+It can be a method name, variable name, class name or label name.
 
 ```java linenums="1"
 //Example
@@ -16,7 +16,7 @@ class Test {
 }
 ```
 
-In this example, there are 5 identifiers
+In this example, there are five identifiers
 
 - `Test` - class name
 - `main` - method name
@@ -48,7 +48,7 @@ String total123; //valid
 String 123total; //invalid
 ```
 
-3) Java identifiers are case-sensitive, and of-course Java language itself is treated as case-sensitive programming language.
+3) Java identifiers are case-sensitive, and of-course Java language itself is treated as a case-sensitive programming language.
 
 ```java linenums="1"
 class Test {
@@ -68,7 +68,7 @@ class Test {
 int x = 10; //valid
 int if = 10; //invalid
 ```
-6) All pre-defined Java class name and interface name can be used as identifiers.
+6) All pre-defined Java class names and interface names can be used as identifiers.
 
 ```java linenums="1"
 class Test {
@@ -103,7 +103,8 @@ String int; //invalid
 
 ## Reserved words
 
-In Java, some words are reserved to represent some meaning or functionality, such type of words are called reserved words.
+In Java, some words are reserved to represent some meaning or functionality;
+such a type of words is called reserved words.
 
 ```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
@@ -203,7 +204,8 @@ this
 ```
 
 ### void return type keyword(1)
-In Java, return type is mandatory. If a method doesn't return anything then we have to declare that method with void return type.
+In Java, return type is mandatory.
+If a method doesn't return anything, then we have to declare that method with void return type.
 
 But in C language, return type is optional and default return type is int.
 
@@ -214,7 +216,7 @@ goto
 const
 ```
 
-Usage of `goto` keyword created several problem in old language, hence Sun people banned this keyword in Java.
+Usage of `goto` keyword created several problems in old language, hence Sun people banned this keyword in Java.
 
 Use `final` instead of `const`.
 
@@ -241,8 +243,8 @@ enum Months {
 
 ### Conclusion:
 
-- All 53 reserved words in Java contains only lower case alphabet.
-- We have only `new` keyword and there is no `delete` keyword, because destruction of useless object is the responsibility of garbage collector.
+- All 53 reserved words in Java contain only lower case alphabet.
+- We have only `new` keyword and there is no `delete` keyword, because destruction of a useless object is the responsibility of garbage collector.
 - Following are new keywords in Java
     
     ```java linenums="1"

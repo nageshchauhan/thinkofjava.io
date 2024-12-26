@@ -34,6 +34,7 @@ nav:
     - Data Types: fundamentals/2_datatype/datatypes.md
     - Literals: fundamentals/3_literals/literals.md
     - Arrays: fundamentals/4_arrays/arrays.md
+    - Types of variables: fundamentals/5_variables/variables.md
   #- Operators and Assignments:
       #- Overview: fundamentals/README.md
 
@@ -49,6 +50,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
+  - tables
 copyright: |
   Copyright &copy; 2024 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>

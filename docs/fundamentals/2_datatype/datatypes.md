@@ -1,12 +1,15 @@
 # Data Types
 
-In Java, every variable expression has some type. Each and every data type is clearly defined.
+In Java, every variable expression has some type. Every data type is clearly defined.
 
-Every assignment should be checked by compiler for type compatibility. 
+Compiler should check every assignment for type compatibility. 
 
-Because of the above reason, we can conclude Java language is strongly typed programming language.
+Because of the above reason, we can conclude Java language is a strongly typed programming language.
 
-Java is not considered as pure object-oriented programming language because several OOPS feature are not satisfied by Java (like operator overloading, multiple inheritance etc.). Moreover, we depend on primitive datatypes which are non objects.
+Java is not considered as a pure object-oriented programming language
+because several OOPS features are not satisfied by Java
+(like operator overloading, multiple inheritance, etc.).
+Moreover, we depend on primitive datatypes which are non objects.
 
 
 ## Primitive Data types (8 types)
@@ -67,7 +70,8 @@ byte b = "test";
 //found: java.lang.String, required: byte
 ```
 
-byte is the best choice, if we want to handle data in terms of streams, either from the file or from network (file or network supported form is byte).
+byte is the best choice, if we want to handle data in terms of streams, either from the file or from network
+(a file or network supported form is byte).
 
 
 ### short 
@@ -85,11 +89,12 @@ short s = 32767; //valid
 short s = 32768; //CE: Possible loss of precision, found: int, required: short
 ```
 
-short datatype is the best suitable for 16-bit processor like 8085 but these processor are completely outdated and hence corresponding short datatype is also outdated datatype.
+short datatype is the best suitable for 16-bit processor like 8085,
+but these processors are completely outdated and hence the corresponding short datatype is also outdated datatype.
 
 ### int
 
-This is most commonly used datatype in Java.
+This is the most commonly used datatype in Java.
 
 **Size**: 4 bytes (32 bits)
 
@@ -108,7 +113,7 @@ int x = true; //CE: incompatible datatype, found: boolean, required: int
 ```
 
 ### long
-Sometimes int may not enough to hold large value then we can use long datatype.
+Sometimes integer may not enough to hold a large value then we can use long datatype.
 
 **Size**: 8 bytes (64 bits)
 
@@ -116,15 +121,16 @@ Sometimes int may not enough to hold large value then we can use long datatype.
 
 eg.
  
-The amount of distance travelled by light in 100days, to hold this value, `int` may not enough.
+The amount of distance traveled by light in 100 days, to hold this value, `int` may not enough.
 
 `long l = 126000000000;`
 
-The number of character present in a big file may exceed int range, hence the return type of length method is long but not int.
+The number of characters present in a big file may exceed int range, hence the return type of length method is long but not int.
 
 `long l = file.length();`
 
-**Note**: All above datatypes (byte, short, int, long) meant for representing integral values. If we want to represent floating point values then we should use floating point datatype.
+**Note**: All above datatypes (byte, short, int, long) meant for representing integral values. 
+If we want to represent floating point values, then we should use floating point datatype.
 
 ### float
 If we want 5 to 6 decimal place of accuracy then we should use `float`. It follows single precision.
@@ -160,83 +166,33 @@ boolean b = "true";
 
 ### char
 
-Old languages (like c/c++) are ASCII based and number of allowed ASCII characters are less than or equal to 256. To represent these 256 characters, 8 bits(1 byte) is enough hence the size of char in old language is 1 byte.
+Old languages (like c/c++) are ASCII based, and the number of allowed ASCII characters is less than or equal to 256.
+To represent these 256 characters, 8 bits(1 byte) is enough, hence the size of char in old language is one byte.
 
-But Java is Unicode based and the number of different Unicode characters are greater than 256 and less than or equal to 65536. To represent these many characters, 8 bits may not enough. So it uses 16 bits, hence the size of `char` in Java is 2 bytes.
+But Java is Unicode-based, 
+and the number of different Unicode characters is greater than 256 and less than or equal to 65,536.
+To represent these many characters, 8 bits may not be enough.
+So it uses 16 bits, hence the size of `char` in Java is two bytes.
 
 **Size**: 2 bytes (16 bits)
 
-**Range**: 0 to 65536
+**Range**: 0 to 65,536
 
 ## Summary of Java primitive datatypes
 
-<table>
-  <tr>
-    <th>Data type</th>
-    <th>Size</th>
-    <th>Range</th>
-    <th>Wrapper class</th>
-    <th>Default Value</th>
-  </tr>
-  <tr>
-    <td>byte</td>
-    <td>1 byte</td>
-    <td> -2<sup>7</sup> to 2<sup>7</sup> - 1</td>
-    <td>Byte</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>short</td>
-    <td>2 bytes</td>
-    <td> -2<sup>15</sup> to 2<sup>15</sup> - 1</td>
-    <td>Short</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>int</td>
-    <td>4 bytes</td>
-    <td> -2<sup>31</sup> to 2<sup>31</sup> - 1</td>
-    <td>Integer</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>long</td>
-    <td>8 bytes</td>
-    <td> -2<sup>63</sup> to 2<sup>63</sup> - 1</td>
-    <td>Long</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>float</td>
-    <td>4 byte</td>
-    <td> -3.4e38 to 3.4e38</td>
-    <td>Float</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>double</td>
-    <td>8 byte</td>
-    <td> -1.7e308 to 1.7e308</td>
-    <td>Double</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>char</td>
-    <td>2 bytes</td>
-    <td> 0 to 65536</td>
-    <td>Character</td>
-    <td>0 [represents space character]</td>
-  </tr>
-  <tr>
-    <td>boolean</td>
-    <td>NA</td>
-    <td> NA [allowed values true|false]</td>
-    <td>Boolean</td>
-    <td>false</td>
-  </tr>
-</table>
+| Data type | Size    | Range                                 | Wrapper class | Default value                  |
+|:----------|:--------|:--------------------------------------|:--------------|:-------------------------------|
+| byte      | 1 byte  | -2<sup>7</sup> to 2<sup>7</sup> - 1   | Byte          | 0                              |
+| short     | 2 bytes | -2<sup>15</sup> to 2<sup>15</sup> - 1 | Short         | 0                              |
+| int       | 4 bytes | -2<sup>31</sup> to 2<sup>31</sup> - 1 | Integer       | 0                              |
+| long      | 8 bytes | -2<sup>63</sup> to 2<sup>63</sup> - 1 | Long          | 0                              |
+| float     | 4 bytes | -3.4e38 to 3.4e38                     | Float         | 0                              |
+| double    | 8 bytes | -1.7e308 to 1.7e308                   | Double        | 0                              |
+| char      | 2 bytes | 0 to 65,536                           | Character     | 0 [represents space character] |
+| boolean   | NA      | NA [allowed values true/false]        | Boolean       | false                          |
 
-<strong>Note:</strong> `null` is default value for object reference, and we can't apply for primitive. If we try to use for primitive we'll get compile time error.
+<strong>Note:</strong> `null` is default value for object reference, and we can't apply for primitive.
+If we try to use for primitive, we'll get compile time error.
 
 ```java
 //Example
