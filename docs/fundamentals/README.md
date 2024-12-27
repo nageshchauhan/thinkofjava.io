@@ -7,5 +7,4 @@
 5. [Types of variable](5_variables/variables.md)
 6. [var arg methods](6_varargs/var-args.md)
 7. [main method](7_mainmethod/main-method.md)
-8. [command line argument]()
-9. [Java coding standards]()
+8. [command line argument](8_command_line/command-line.md)

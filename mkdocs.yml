@@ -37,6 +37,7 @@ nav:
     - Types of variables: fundamentals/5_variables/variables.md
     - var-arg method: fundamentals/6_varargs/var-args.md
     - main-method: fundamentals/7_mainmethod/main-method.md
+    - Command line args: fundamentals/8_command_line/command-line.md
   #- Operators and Assignments:
       #- Overview: fundamentals/README.md
 
