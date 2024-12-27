@@ -35,6 +35,8 @@ nav:
     - Literals: fundamentals/3_literals/literals.md
     - Arrays: fundamentals/4_arrays/arrays.md
     - Types of variables: fundamentals/5_variables/variables.md
+    - var-arg method: fundamentals/6_varargs/var-args.md
+    - main-method: fundamentals/7_mainmethod/main-method.md
   #- Operators and Assignments:
       #- Overview: fundamentals/README.md
 
