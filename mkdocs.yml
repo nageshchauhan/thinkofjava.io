@@ -38,8 +38,23 @@ nav:
     - var-arg method: fundamentals/6_varargs/var-args.md
     - main-method: fundamentals/7_mainmethod/main-method.md
     - Command line args: fundamentals/8_command_line/command-line.md
-  #- Operators and Assignments:
-      #- Overview: fundamentals/README.md
+  - Operators and Assignments:
+    - Overview: operators/README.md
+    - Increment & Decrement: operators/increment-decrement.md
+    - Arithmetic Operators: operators/arithmetic.md
+    - String Concatenation: operators/string-concat.md
+    - Relational Operators: operators/relational-operator.md
+    - Equality Operators: operators/equality.md
+    - instanceof Operator: operators/instanceof.md
+    - Bitwise Operator: operators/bitwise.md
+    - Short-circuit Operator: operators/short-circuit.md
+    - Type cast operator: operators/type-cast-operator.md
+    - Assignment Operator: operators/assignment.md
+    - Conditional Operator: operators/conditional.md
+    - new operator: operators/new-operator.md
+    - Operator Precedence: operators/operator-precedence.md
+    - new vs newInstance(): operators/new-vs-new-instance.md
+    - instanceof vs isInstance(): operators/instanceof-vs-isinstance.md
 
 markdown_extensions:
   - pymdownx.highlight:

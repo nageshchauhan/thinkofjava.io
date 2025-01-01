@@ -3,7 +3,7 @@
 The java concept which all Java programmers must be aware of.
 
 1. [Java Fundamentals](fundamentals/README.md)
-2. Operators and Assignments
+2. [Operators and Assignments](operators/README.md)
 3. Flow control
 4. Declaration and access modifiers
 5. Interface and abstract class
