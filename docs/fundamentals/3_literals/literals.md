@@ -64,9 +64,9 @@ int x = 10L; // CE: possible loss of precision, found: long, required: int
 long l = 10; // valid
 ```
 
-There is no direct way to specify byte and short literal explicitly, but indirectly we can specify. 
-Whenever we are assigning integral literal to the byte variable and if the value within the range of byte, 
-then the compiler treats it as byte literal, similarly short literals.
+There is no direct way to explicitly specify byte and short literals. However, they can be specified indirectly. 
+When assigning an integral literal to a byte variable, if the value falls within the byte range, 
+the compiler treats it as a byte literal. The same applies to short literals.
 
 ```java linenums="1"
 byte b = 10; //valid
@@ -78,8 +78,8 @@ byte b = 128; // CE: possible loss of precision, found: int, required: byte
 
 ## Floating point literals
 
-By default, every floating point literal is of double type and hence we can't assign directly to float variable.
-But we can specify floating point literal as a float type by suffixed with `f` or `F`
+By default, all floating-point literals are of type `double`, so they cannot be directly assigned to a float variable. 
+However, a floating-point literal can be specified as a float by appending `f` or `F` as a suffix.
 ```java linenums="1"
 float f = 123.456; 
 //CE: Possible loss of precision, fount: double, required: float
@@ -90,7 +90,9 @@ double d = 123.456; //valid
 ```
 <br>
 
-We can specify explicitly floating point literal as double type by suffixed with `d` or `D`. This convention is not required (or optional).
+A floating-point literal can be explicitly specified as a `double` by appending `d` or `D` as a suffix. 
+However, this is optional since floating-point literals are `double` by default.
+
 ```java linenums="1"
 double d = 123.456d; //valid
 
@@ -99,7 +101,7 @@ float f = 123.456d;
 ```
 <br>
 
-We can specify floating point literals only in decimal form, and we can't specify in octal or hexadecimal forms
+Floating-point literals can be specified only in decimal form; they cannot be represented in octal or hexadecimal forms.
 ```java linenums="1"
 double d = 123.456; //valid
 
@@ -109,7 +111,7 @@ double d = 0x123.456; //CE: Malformed floating point literal
 ```
 <br>
 
-We can assign integral literal directly to floating point variables and that integral literal can be specified either in decimal, octal or hexadecimal forms.
+Integral literals can be directly assigned to floating-point variables, and these literals can be specified in decimal, octal, or hexadecimal forms.
 ```java linenums="1"
 double d = 0777; //valid
 
@@ -125,7 +127,7 @@ double d = 0xFACE.0; //invalid
 ```
 <br>
 
-We can't assign floating literals to integral type.
+Floating-point literals cannot be assigned to integral types directly.
 ```java linenums="1"
 double d = 10; //valid
 
@@ -133,7 +135,7 @@ int x = 10.0; //CE: Possible loss of precision, found: double, required: int
 ```
 <br>
 
-We can specify floating point literal even in exponential form (scientific notation)
+Floating-point literals can also be represented in exponential form, also known as scientific notation.
 ```java linenums="1"
 double d = 1.2e3; //valid
 
@@ -174,9 +176,8 @@ char ch = 'ab'; //CE: unclosed char literal 'ab', not closed statement 'ab'
 ```
 <br>
 
-We can specify char literal as integral literal which represents Unicode value of character,
-and that integral literal can be specified either in decimal, 
-octal or hexadecimal forms, but the allowed range is 0 to 65,535.
+A character literal can be specified as an integral literal representing the Unicode value of the character. 
+This integral literal can be in decimal, octal, or hexadecimal form, but it must fall within the valid range of 0 to 65,535.
 ```java linenums="1"
 char ch = 0xFACE; //valid
 
@@ -240,12 +241,13 @@ Any sequence of character within double quote is treated as string literal.
 ## v1.7 Enhancement with respect to Literals
 
 - Binary literals
+  
+    Until version 1.6, integral literals could be specified in the following forms:
 
-    For integral datatype, until 1.6 version we can specify literal values in following ways:
-    - decimal form
-    - octal form
-    - hexadecimal form
-    
+    - Decimal form
+    - Octal form
+    - Hexadecimal form
+   
     But from 1.7v onwards, we can specify literal value even in binary form. Allowed digits are 0 and 1. Literal value should be prefixed with `0b` or `0B` [zero B]
     
     ```java linenums="1"

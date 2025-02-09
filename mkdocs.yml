@@ -70,4 +70,4 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - tables
 copyright: |
-  Copyright &copy; 2024 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>
+  Copyright &copy; 2025 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>
