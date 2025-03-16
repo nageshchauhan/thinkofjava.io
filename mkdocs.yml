@@ -55,6 +55,10 @@ nav:
     - Operator Precedence: operators/operator-precedence.md
     - new vs newInstance(): operators/new-vs-new-instance.md
     - instanceof vs isInstance(): operators/instanceof-vs-isinstance.md
+  - Flow Control:
+    - Overview: flow-control/README.md
+    - Introduction: flow-control/introduction.md
+    - Selection Statement: flow-control/selection-statement.md
 
 markdown_extensions:
   - pymdownx.highlight:
