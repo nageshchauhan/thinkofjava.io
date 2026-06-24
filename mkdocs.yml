@@ -9,6 +9,9 @@ theme:
     - content.code.copy
     - content.code.annotation
     - navigation.indexes
+    - search.suggest
+
+
   palette:
     - scheme: default
       toggle:
@@ -55,6 +58,12 @@ nav:
     - Operator Precedence: operators/operator-precedence.md
     - new vs newInstance(): operators/new-vs-new-instance.md
     - instanceof vs isInstance(): operators/instanceof-vs-isinstance.md
+  - Flow Control:
+    - Overview: flow-control/README.md
+    - Introduction: flow-control/introduction.md
+    - Selection Statement: flow-control/selection-statement.md
+    - Iterative Statement: flow-control/iterative-statement.md
+    - Transfer Statement: flow-control/transfer-statement.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -69,5 +78,11 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - tables
+
+extra:
+  analytics:
+    provider: google
+    property: G-3VLHPPJ5F5
+
 copyright: |
-  Copyright &copy; 2025 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>
+  Copyright &copy; 2026 <a href="https://github.com/nageshchauhan"  target="_blank" rel="noopener">Nagesh Chauhan</a>
